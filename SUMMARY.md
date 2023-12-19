@@ -9,8 +9,9 @@
 	    - [B² Nodes](b2_nodes.md)
 	    - [B² Inscription](b2_inscription.md)
 	    - [B² Commitment](b2_commitment.md)
+	    - [Bitcoin Network](bitcoin.md)
 - [Get started](get_started.md)
-	- [Quick start](quick_start.md)
+	- Quick start
 	    - [Connect to B² Testnet](connect.md)   
 	    - [Using Testnet faucet](faucet.md)
 	    - [Bridge to B² Testnet](bridge.md)
