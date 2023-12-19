@@ -1,0 +1,3 @@
+# Decentralized Storage
+
+Nodes in Decentralized Storage receive rollup data sent by the Sequencer from Rollup Layer and store them. Storage Nodes run the ds-prover program of B² Network, periodically generating zero-knowledge proofs based on time and space for the stored rollup data. The ds-prover program sends the generated zk proof of storage to B² Nodes, and after verification, Storage Nodes receive certain storage rewards. The Storage Nodes in Decentralized Storage redundantly store copies of rollup data, ensuring the data availability of B² Network.
