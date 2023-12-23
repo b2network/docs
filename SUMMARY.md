@@ -16,6 +16,7 @@
 	    - [Using Testnet faucet](faucet.md)
 	    - [Bridge to B² Testnet](bridge.md)
 	    - [Using B² Wallet Proxy](use_wallet_proxy.md)
+	    - [How to mint CHRISTMAS PRESENTS BONANZA NFT](mint_cpb.md)
 	- [Deploy](deploy.md)
 - [How to](how_to.md)
     - [Write a contract](write_contract.md)
