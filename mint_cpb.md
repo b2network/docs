@@ -12,7 +12,7 @@
 
 ![mint_guide_3](https://ipfs.io/ipfs/QmVcFJyD6xoKBvqYPgy1CR3vN4XWBbNeN8zG8Kbcu6Unoe)
 
-3. If you have not installed B² wallet proxy, please download and install it by reading [Using Wallet Proxy](https://docs.bsquared.network/get_started/quick-start/use_wallet_proxy).
+3. If you have not installed B² wallet proxy, please download and install it according to [Using Wallet Proxy](https://docs.bsquared.network/get_started/quick-start/use_wallet_proxy).
 
 4. If you are whitelisted, you will see the minting page like this:
 
@@ -24,7 +24,7 @@
 
 ## Mint Christmas Presents Bonanza NFT
 
-1. Clike the button **Open the Christmas presents by B² Network**.
+1. Click the button **Open the Christmas presents by B² Network**.
 
 ![mint_guide_6](https://ipfs.io/ipfs/QmfDsxKQRrgYNbEUE2QWXsWTMHh9Egn5jqTvaoUpZ27CBn)
 
@@ -34,6 +34,6 @@
 
 ## Get Christmas Presents Bonanza NFT
 
-If you successfully mint the NFT, the NFT will be shown on the page.
+If you have successfully minted an NFT, it will be shown on the following page.
 
 ![mint_guide_7](https://ipfs.io/ipfs/QmaqaAcaVQDW7KdKX5PNkzEn5QG7AVQu1MtSEfgZYmhDwZ)
