@@ -12,9 +12,10 @@
 	    - [Bitcoin Network](bitcoin.md)
 - [Get started](get_started.md)
 	- Quick start
-	    - [Connect to B² Testnet](connect.md)   
+	    - [Connecting to B² Testnet](connect.md)   
 	    - [Using Testnet faucet](faucet.md)
 	    - [Bridge to B² Testnet](bridge.md)
+	    - [Using B² Wallet Proxy](use_wallet_proxy.md)
 	- [Deploy](deploy.md)
 - [How to](how_to.md)
     - [Write a contract](write_contract.md)
