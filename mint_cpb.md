@@ -14,11 +14,11 @@
 
 3. If you have not installed B² wallet proxy, please download and install it by reading [Using Wallet Proxy](https://docs.bsquared.network/get_started/quick-start/use_wallet_proxy).
 
-4. If you are whitelisted, you will see this page like this:
+4. If you are whitelisted, you will see the minting page like this:
 
 ![mint_guide_4](https://ipfs.io/ipfs/Qmbxv7r9TEswENNXWeoydPwavzV7u6PxwtEfNVvKLdhtos)
 
-5. If you are not whitelisted, you will see this page like this:
+5. If you are not whitelisted, you will see the minting page like this:
 
 ![mint_guide_5](https://ipfs.io/ipfs/QmdPm87PMs8yAwbixv6x44awLpuKHkr7G1fZvixgFABZsN)
 
