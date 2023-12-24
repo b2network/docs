@@ -2,7 +2,7 @@
 
 B² Testnet is connected to Bitcoin Testnet, utilizing BTC from the Bitcoin Testnet for gas fees on B² rollup. 
 
-Users need to obtain test BTC from Bitcoin Testnet faucet and then cross-chain it to B² rollup through B² test bridge for on-chain interactions. 
+Users need to obtain BTC testcoin from Bitcoin Testnet faucet and then cross-chain it to B² rollup through B² test bridge. 
 
 The gas price on B² Testnet has been adjusted to a very low value, ensuring that test BTC acquired from Bitcoin Testnet faucet is sufficient to cover transaction fees on B² rollup.
 
@@ -16,12 +16,11 @@ The gas price on B² Testnet has been adjusted to a very low value, ensuring tha
 
 - Enter your wallet address (you can copy it from your Bitcoin wallet that supports testnet tokens)
 
-- Enter the requested quantity; you can apply for a maximum of 0.00008 BTC
+- Enter the requested quantity, with a maximum of 0.00008 BTC available
 
-- Click on the button: Send testnet bitcoins
+- Click the button: Send testnet bitcoins
 
-
-- Then wait for your account to receive test BTC
+- Wait for a while to receive test BTC
 
 ### beyondfaucet
 
@@ -33,6 +32,6 @@ The gas price on B² Testnet has been adjusted to a very low value, ensuring tha
 
 - Aggree to the terms and conditions
 
-- Interact with "I am human"
+- Pass the CAPTCHA verification
 
-- Click on the button: Send Testnet Bitcoin
+- Click the button: Send Testnet Bitcoin
