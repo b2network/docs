@@ -1,8 +1,8 @@
 # Deploy a contract with Hardhat
 
-Hardhat is one of the popular smart contract development frameworks. It is the B² Network’s preferred framework, and therefore used in the B² rollup as a default for deploying and automatically verifying smart contracts.
+This section is a guide on how to deploy a smart contract on the B² Network using [Hardhat](https://hardhat.org/).
 
-This document is a guide on how to deploy a smart contract on the B² Network using [Hardhat](https://hardhat.org/).
+Hardhat is a popular smart contract development frameworks. It is used in the B² rollup as a default for deploying and automatically verifying smart contracts.
 
 ## Initial setup
 
