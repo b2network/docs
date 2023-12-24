@@ -1,6 +1,6 @@
 # Write a contract
 
-This document explains how to automatically write a smart contract using the OpenZeppelin Wizard. The resulting smart contract code can either be integrated with Remix by Clicking the **Open in Remix** button, or copied to a clipboard and pasted in the user’s intended IDE.
+This section explains how to automatically write a smart contract using the OpenZeppelin Wizard. The resulting smart contract code can either be integrated with Remix by Clicking the **Open in Remix** button, or copied to a clipboard and pasted in the user’s intended IDE.
 
 ## Getting started
 
