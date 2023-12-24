@@ -2,7 +2,7 @@
 
 ## Download B² Wallet Proxy
 
-Download URL: [B² Wallet Proxy](https://b2-static.bsquared.network/assets/wallet/b2-wallet-proxy.tar.gz)
+Download URL: [B² Wallet Proxy](https://b2-static.bsquared.network/assets/wallet/b2-wallet-proxy-v0.1.2.zip)
 
 ## How to use B² Wallet Proxy
 
