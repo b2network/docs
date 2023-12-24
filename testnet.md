@@ -1,3 +1,3 @@
 # Testnet
 
-TODO
+Stay tuned.
