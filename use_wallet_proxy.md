@@ -8,7 +8,7 @@ Download URL: [B² Wallet Proxy](https://b2-static.bsquared.network/assets/walle
 
 1. Download the [B² Wallet Proxy](https://b2-static.bsquared.network/assets/wallet/b2-wallet-proxy-v0.1.2.zip) to your computer for the Chrome extension you want to install, and unzip the extension file.
 
-2. Go to [chrome://extensions/](chrome://extensions/) and check the box for Developer mode in the top right.
+2. Go to chrome://extensions/ and check the box for Developer mode in the top right.
 
 ![guide_1](https://ipfs.io/ipfs/QmYysWMKtoF4UKquVr8tZUtjE3JwFrvhwJNwu9VWFJXLiC)
 
@@ -28,7 +28,7 @@ Download URL: [B² Wallet Proxy](https://b2-static.bsquared.network/assets/walle
 
 1. Download the latest version from B² Wallet Proxy old version or URL: [B² Wallet Proxy](https://b2-static.bsquared.network/assets/wallet/b2-wallet-proxy-v0.1.2.zip) and unzip the extension file.
 
-2. Go to [chrome://extensions/](chrome://extensions/) .
+2. Go to chrome://extensions/ .
 
 3. Remove the old version extension and confirm Remove from the window.
 
