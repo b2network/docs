@@ -25,3 +25,4 @@
     - [Integrate B² account abstraction sdk](account_abstraction_sdk.md)
 - [Roadmap](roadmap.md)
 	- [B² Testnet](testnet.md)
+- [Press-Kit](press-kit.md)
