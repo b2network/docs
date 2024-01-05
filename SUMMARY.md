@@ -1,6 +1,7 @@
 # Summary
 
-- [Overview](main/overview.md)
+- [B² Network](README.md)
+	- [Overview](main/overview.md)
 - [Zero-Knowledge Proof Verification Commitment for ZK-Rollup on Bitcoin](main/zpvc.md)
 - [Tech Architecture](tech_architecture/architecture.md)
 	- [Rollup Layer](tech_architecture/rollup_layer.md) 
@@ -10,14 +11,14 @@
 	    - [B² Inscription](tech_architecture/b2_inscription.md)
 	    - [B² Commitment](tech_architecture/b2_commitment.md)
 	    - [Bitcoin Network](tech_architecture/bitcoin.md)
-- [For Users]
+- For Users
 	- [Connecting to B² Testnet](users/connect.md)  
 	- [Install B² Wallet Proxy](users/use_wallet_proxy.md)
 	- [Join B² Network Odyssey]()
 	- [Get test BTC](users/faucet.md)
 	- [Bridge to B² Testnet](users/bridge.md)
 	- [Transfer BlockHeadz NFT]()
-- [For Developers]
+- For Developers
 	- [Write a contract](developers/write_contract.md)
 	- [Deploy a contract with Hardhat](developers/deploy_with_hardhat.md)
 	- [Integrate B² wallet proxy](developers/wallet_proxy.md)
