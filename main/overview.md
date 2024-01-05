@@ -1,6 +1,14 @@
 # Overview
 
+B² Network is the most practical Bitcoin Layer2 Network.
+
 B² Network is a Layer-2 solution that bolsters transaction speed and broadens application diversity without sacrificing security. B² Network is the first zero-knowledge proof verification commitment rollup on Bitcoin. Leveraging rollup technology, B² Network provides a platform capable of running Turing-complete smart contracts for off-chain transactions, which enhances transaction efficiency and minimizes costs. Additionally, zero-knowledge proof technology is employed in tandem with gate commitment and challenge-response of Taproot to guarantee transactional privacy and security during confirmation on Bitcoin. The network's objective is to metamorphose Bitcoin into a versatile platform, paving the way for groundbreaking applications such as DeFi, NFTs, and other decentralized systems. Overall, B² Network epitomizes a harmonized progression, upholding Bitcoin’s core values while navigating the future digital asset landscape.
+
+- B² Network is a zk proof verification commitment rollup on Bitcoin.
+- B² Network is EVM compatible.
+- B² Network supports Bitcoin address account and Ethereum address account.
+- B² Network is fast and cheap.
+- B² Network is safe and trusty.
 
 ## Core Values
 
