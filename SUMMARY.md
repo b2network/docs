@@ -14,10 +14,10 @@
 - For Users
 	- [Connecting to B² Testnet](users/connect.md)  
 	- [Install B² Wallet Proxy](users/use_wallet_proxy.md)
-	- [Join B² Network Odyssey]()
+	- [Join B² Network Odyssey](users/join_odyssey.md)
 	- [Get test BTC](users/faucet.md)
 	- [Bridge to B² Testnet](users/bridge.md)
-	- [Transfer BlockHeadz NFT]()
+	- [Transfer BlockHeadz NFT](users/transfer_blockheadz.md)
 - For Developers
 	- [Write a contract](developers/write_contract.md)
 	- [Deploy a contract with Hardhat](developers/deploy_with_hardhat.md)
