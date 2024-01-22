@@ -12,7 +12,7 @@ The node startup requires the same initialization configuration file `genesis.co
 
 If you don't have an account yet, you need to create an account with the following command:
 ```
-$ ethermintd keys add --keyring-backend=test
+$ ethermintd keys add [key-name] --keyring-backend=test
 ```
 
 Before doing the following, you need to make sure that you have enough tokens in your account to complete the pledge and as Gas fee.
@@ -20,18 +20,24 @@ Before doing the following, you need to make sure that you have enough tokens in
 Use the following command to add a new validator node:
 
 ```
-ethermintd tx staking create-validator \\
-  --amount=1000000bsq \\
-  --pubkey=$(ethermintd tendermint show-validator --home <HOME>) \\
-  --moniker="choose a moniker" \\
-  --chain-id=<chain_id> \\
-  --keyring-backend=test \\
-  --commission-rate="0.05" \\
-  --commission-max-rate="0.10" \\
-  --commission-max-change-rate="0.01" \\
-  --min-self-delegation="1000000" \\
-  --gas=auto \\
-  --gas-prices="1bsq" \\
-  --from=<key_name> \\
+$ ethermintd tx staking create-validator \
+  --amount=1000000bsq \
+  --pubkey=$(ethermintd tendermint show-validator --home <HOME>) \
+  --moniker=<choose a moniker> \
+  --chain-id=<chain_id> \
+  --keyring-backend=test \
+  --commission-rate="0.05" \
+  --commission-max-rate="0.10" \
+  --commission-max-change-rate="0.01" \
+  --min-self-delegation="1000000" \
+  --gas=10000 \
+  --gas-prices="10bsq" \
+  --from=<key_name> \
   --home=<HOME>
+```
+
+After successfully adding a validator node, you can query the current set of validator nodes with the following command.
+
+```
+$ ethermintd query staking validators
 ```
