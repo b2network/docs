@@ -13,7 +13,6 @@
 	    - [Bitcoin Network](tech_architecture/bitcoin.md)
 - For Users
 	- [Connecting to B² Testnet](users/connect.md)  
-	- [Install B² Wallet Proxy](users/use_wallet_proxy.md)
 	- [Join B² Network Odyssey](users/join_odyssey.md)
 	- [Get test BTC](users/faucet.md)
 	- [Bridge to B² Testnet](users/bridge.md)
@@ -21,6 +20,4 @@
 - For Developers
 	- [Write a contract](developers/write_contract.md)
 	- [Deploy a contract with Hardhat](developers/deploy_with_hardhat.md)
-	- [Integrate B² wallet proxy](developers/wallet_proxy.md)
-    - [Integrate B² account abstraction sdk](developers/account_abstraction_sdk.md)
 - [Press-Kit](main/press-kit.md)
