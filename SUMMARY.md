@@ -2,6 +2,7 @@
 
 - [B² Network](README.md)
 	- [Overview](main/overview.md)
+- [Buzz Guide](users/buzz_guide.md)
 - [Zero-Knowledge Proof Verification Commitment for ZK-Rollup on Bitcoin](main/zpvc.md)
 - [Tech Architecture](tech_architecture/architecture.md)
 	- [Rollup Layer](tech_architecture/rollup_layer.md) 
@@ -18,7 +19,6 @@
 	- [Bridge to B² Testnet](users/bridge.md)
 	- [Transfer BlockHeadz NFT](users/transfer_blockheadz.md)
  	- [Meson Task Guide](users/meson_task.md)
-  	- [Buzz Guide](users/buzz_guide.md)
 - For Developers
 	- [Write a contract](developers/write_contract.md)
 	- [Deploy a contract with Hardhat](developers/deploy_with_hardhat.md)
