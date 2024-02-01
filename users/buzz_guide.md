@@ -19,7 +19,7 @@ The mining rewards of B² native tokens will be released after the Token Generat
 
 ## Registration and Invitation
 
-1.  **Accessing the Event Page**: Go to the B² Buzz event landing page by entering `[https://buzz.bsquared.network/](https://buzz.bsquared.network/)` in your web browser.
+1.  **Accessing the Event Page**: Go to the B² Buzz event landing page by entering [https://buzz.bsquared.network/](https://buzz.bsquared.network/) in your web browser.
 
 2.  **Starting Registration**: Select 'Join Now' to begin the registration process.
 
