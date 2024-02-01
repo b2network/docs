@@ -17,7 +17,8 @@
 	- [Get test BTC](users/faucet.md)
 	- [Bridge to B² Testnet](users/bridge.md)
 	- [Transfer BlockHeadz NFT](users/transfer_blockheadz.md)
- 	- [Meson task guide](users/meson_task.md)
+ 	- [Meson Task Guide](users/meson_task.md)
+  	- [Buzz Guide](users/buzz_guide.md)
 - For Developers
 	- [Write a contract](developers/write_contract.md)
 	- [Deploy a contract with Hardhat](developers/deploy_with_hardhat.md)
