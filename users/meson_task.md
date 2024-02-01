@@ -32,19 +32,25 @@
 #### Get USDC from Avalanche Fuji
 
 Test token collection address 1: <https://core.app/tools/testnet-faucet/?subnet=c&token=usdcc> （1 USDC per time）
+
 Test token collection address 2: <https://faucet.circle.com/> （10 USDC per time）
 
 #### Get AVAV from Avalanche Fuji
 
 Test token collection address 1: <https://core.app/tools/testnet-faucet/?subnet=c&token=c> ( 2 AVAV per time)
+
 Test token collection address 2: <https://www.allthatnode.com/faucet/avalanche.dsrv> （0.5 AVAV per time, sometimes the balance is insufficient)
 
 #### Get BTC from B² Testnet
 
 Go to the B² Testnet Faucet page after connecting your wallet on the Odyssey platform.
+
 ![](https://quicknode.quicknode-ipfs.com/ipfs/Qmb35thEGtKUneM2JWDUjZ8i83dvhKrvEqFZTcF31xYWKz)
+
 Enter your EVM address.
+
 ![](https://quicknode.quicknode-ipfs.com/ipfs/QmUQVGEvXoetByyMU2XV5zYT7owYgj1pCta2jzNqiwPGjQ)
+
 
 ## 2. Connect wallet on Odyssey
 
@@ -57,19 +63,27 @@ Since Meson only supports connecting to EVM addresses, you need to connect to an
 ## 4. Deposit
 
 After connecting the wallet, select the cross-chain network information as follows.
+
 Enter the receiving address and click Redeem. The recipient address will be the same as the sender address.
+
 ![](https://quicknode.quicknode-ipfs.com/ipfs/QmTmkB3znkFh3qiNTGeP7dvnaHTwZCAyyNUnNMnpbCEzkp)
+
 Confirm the redemption information in the pop-up window and sign the transaction in the wallet.
+
 ![](https://quicknode.quicknode-ipfs.com/ipfs/QmSjgzZJGBmrM1NuUWKCuZATzPLhC4wqv4ZkLFtQQWGRH9)
+
 Once the transaction is confirmed, you can review its status on the page.
 
 ## 5. Withdrawal
 
 After connecting the wallet, select the cross-chain network information as follows:
+
 ![](https://quicknode.quicknode-ipfs.com/ipfs/QmP57h3N5dixj4GxgYSqzET5G6skNihxRhyTNyB6JyWeeL)
+
 Confirm the transaction information in the pop-up window and sign the transaction in the wallet after confirmation.
 
 ## 6. Refresh Odyssey Points
 
 After successfully completing the deposit and withdrawal transaction, revisit the Odyssey page to refresh your status and you will notice 100 points already updated.
+
 ![](https://quicknode.quicknode-ipfs.com/ipfs/QmS8ysb2CypWDbvEUMqfckvtEcr85KPW3S8da4bTis9PxJ)
