@@ -87,22 +87,3 @@ Confirm the transaction information in the pop-up window and sign the transactio
 After successfully completing the deposit and withdrawal transaction, revisit the Odyssey page to refresh your status and you will notice 100 points already updated.
 
 ![](https://quicknode.quicknode-ipfs.com/ipfs/QmS8ysb2CypWDbvEUMqfckvtEcr85KPW3S8da4bTis9PxJ)
-
-## Meson Gas Station
-
-Meson Gas station provides an efficient one-stop solution for refueling gas on the Bsquared testnet, allowing users to simply transfer USDT/USDC for gas token (BTC) to cover the gas fee on the Bsquared testnet. 
-
-1. Enter the amount of USDC/USDT you want to receive on the BSquared testnet, click on the "Need Gas?" button.
-
-![](https://quicknode.quicknode-ipfs.com/ipfs/QmfMyF3rKu29eTiMRosmEgEUT97tRbPuMqFpyZC5TmoymL)
-
-2. Adjust the refuel amount to a maximum of 20 USDT/USDC for a single transfer of gas tokens (BTC). The receiving amount will be automatically adjusted with the added BTC gas.
-
-![](https://quicknode.quicknode-ipfs.com/ipfs/QmW5mpZZfpSh5htGAhg2HJXGz3hEc9KcpX8Ftso3egud84)
-
-![](https://quicknode.quicknode-ipfs.com/ipfs/QmdnGLyEtEHBCNHffy2q7rQAbqCGHph5xfPNP8qXM84wxo)
-
-3. Confirm that the swap summary displays the added BTC gas, click "CONFIRM" to proceed with the swap.
-
-4. Once the swap is successfully completed, users will have enough gas tokens (BTC) to withdraw assets from the BSquared testnet.
-
