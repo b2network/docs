@@ -2,7 +2,7 @@
 
 ## Linking BTC or binding a BTC address to an EVM address
 
-1. Click **‘start’**.
+1. Click **'start'**.
 
 ![](https://quicknode.quicknode-ipfs.com/ipfs/QmWUdW6MDmQqTL8eM44FczPo8mTKDpZJQsMfuMR8VxMgFp)
 
@@ -16,7 +16,7 @@
 
 ![](https://quicknode.quicknode-ipfs.com/ipfs/QmS7Ho43g6Wu5axtLXB4pJwDvGzGzMnnzB3WbHTCFJ78nR)
 
-4. Enter the amount and click **‘Deposit Funds’**, then confirm the payment in your wallet.
+4. Enter the amount and click **'Deposit Funds'**, then confirm the payment in your wallet.
 
 ![](https://quicknode.quicknode-ipfs.com/ipfs/QmfLMCrLo1ihTSugDSbTW3VeDkruGQnPGTHUBGQGsC7nww)
 
@@ -28,7 +28,7 @@
 
 ![](https://quicknode.quicknode-ipfs.com/ipfs/QmUnMMyHU5rYeYPBGeoxsSc1tNb41xEw9hvsjJu5GhWXJW)
 
-7. After **‘success’** is displayed.
+7. After **'success'** is displayed.
 
 ![](https://quicknode.quicknode-ipfs.com/ipfs/QmWKpCYi6eeu3D3J16jqkc6W8GZ8tEWSoJcfto9hW4yVim)
 
