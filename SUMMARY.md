@@ -22,6 +22,7 @@
  	- [Meson Task Guide](users/meson_task.md)
   	- [Glowswap Task Guide](users/glowswap_task.md)
   	- [LayerBank Task Guide](users/layerbank_task.md)
+  	- [OOOO Task Guide](users/oooo_task.md)
 - For Developers
 	- [Write a contract](developers/write_contract.md)
 	- [Deploy a contract with Hardhat](developers/deploy_with_hardhat.md)
