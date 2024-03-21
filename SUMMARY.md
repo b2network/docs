@@ -18,7 +18,6 @@
 	- [Get test BTC](users/faucet.md)
 	- [Bridge to B² Testnet](users/bridge.md)
 	- [Transfer BlockHeadz NFT](users/transfer_blockheadz.md)
-	- [Deposit USDT/USDC for BTC to B² Testnet](users/deposit_u_for_btc_task.md)
  	- [Meson Task Guide](users/meson_task.md)
   	- [Glowswap Task Guide](users/glowswap_task.md)
   	- [LayerBank Task Guide](users/layerbank_task.md)

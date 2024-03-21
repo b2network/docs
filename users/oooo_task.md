@@ -1,7 +1,6 @@
 # Odyssey-OOOO Task Guidebook
 
 - There are 3 missions and you can get 150 points for completing all of them.
-
 - Please make sure your address is bound and you have enough test coins in advance!
 
 
@@ -27,7 +26,7 @@ https://www.bsquared.network/faucet/
 
 ![](https://quicknode.quicknode-ipfs.com/ipfs/QmRW8uHYf1WyHFkU8XMzfDcKFRTVYtY3tPupLW4d6YM5TE)
 
-2. Connect the btc address you connected/bonded to in Odyssey
+2. Connect the btc address you connected to in Odyssey
 
 ![](https://quicknode.quicknode-ipfs.com/ipfs/QmRrNS4sSGvBhz6wjFmyipiZPanTx5UKYCsfVziZ7GoWHV)
 
@@ -42,7 +41,7 @@ https://www.bsquared.network/faucet/
 
 ![](https://quicknode.quicknode-ipfs.com/ipfs/QmXybukTSnp8wpGkZberixR8gmAmd8dPTZ8dMDnfEXxtHr)
 
-5. After entering the evm address, click TRANSFER and sign inside the wallet.
+5. Please enter the EVM address that you are connecting to on the Odyssey,and  then click TRANSFER and sign inside the wallet.
 
 ![](https://quicknode.quicknode-ipfs.com/ipfs/QmSLB6sucGnBztKhjfjRR6dx27NovPqky9j6w99P5nwXUp)
 
@@ -53,15 +52,13 @@ https://www.bsquared.network/faucet/
 7. When prompted successfully, return to the Odyssey platform, click the refresh button, you can get 50 points.
 
 
-
-
 #### Task 2: Bridge BTC from B² Testnet to BTC Testnet
 
 1. Click Connect Wallet and select **B²**
 
 ![](https://quicknode.quicknode-ipfs.com/ipfs/QmWqCVm7G5BxbyvnbnyKbvWUYhVC7QWsjxTtgPVNRNA95d)
 
-2. Connect the EVM address you connected/bonded to in Odyssey 
+2. Connect the EVM address you connected to in Odyssey 
 
 ![](https://quicknode.quicknode-ipfs.com/ipfs/QmVsyrVNx37yUbSCe1PXazP1VXoycACjVBF4VtE2WAtDPr)
 
@@ -106,7 +103,7 @@ https://www.bsquared.network/faucet/
 
 (If you see the following pop-up window, you have not completed the first two cross-chain missions, please complete them before playing this game)
 
-![](https://quicknode.quicknode-ipfs.com/ipfs/QmRTRPvuAKKyjyVScTAb6UmeTrzALC34M8jewFoTXWXS6B)
+![](https://quicknode.quicknode-ipfs.com/ipfs/QmSmFRh23SEUsBWVNjFY5MmEt1RkLuUmrCG3SHmVaB3PmC)
 
 4. The miners shown in the picture below will appear and you need to wait for about 10min. after that, it will show that you can mint a treasure box, click mint.
 
