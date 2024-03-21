@@ -24,7 +24,7 @@
   	- [LayerBank Task Guide](users/layerbank_task.md)
   	- [OOOO Task Guide](users/oooo_task.md)
   	- [Dmail Task Guide](users/dmail_task.md)
-  	- [AI Tarot Card Divination Handbook](users/ai_tarot_card_divination_handbook.md)
+  	- [LayerCraft Task Guide](users/ai_tarot_card_divination_handbook.md)
 - For Developers
 	- [Write a contract](developers/write_contract.md)
 	- [Deploy a contract with Hardhat](developers/deploy_with_hardhat.md)
