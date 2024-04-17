@@ -1,39 +1,32 @@
-# Bridge
+# Guide to bridging BTC assets on B² Network
 
-## Linking BTC or binding a BTC address to an EVM address
+1. Enter the official website, and click on “Bridge”.
+The withdraw function is not yet available.
+Link: https://www.bsquared.network/bridge/
 
-1. Click **'start'**.
+![](https://quicknode.quicknode-ipfs.com/ipfs/QmNMPhdisuvo3jzLEX9Z2aeA46zg6gt8pEjF1HsvmZTgCp)
 
-![](https://quicknode.quicknode-ipfs.com/ipfs/QmWUdW6MDmQqTL8eM44FczPo8mTKDpZJQsMfuMR8VxMgFp)
+2. Connect to the BTC mainnet address
 
-2. Connect your wallet, paying attention to the wallet address connected to the platform, to ensure that points are credited correctly.
+![](https://quicknode.quicknode-ipfs.com/ipfs/QmW3iHXuSUdkYw5sJcqAauVzjz2PoCULmXav5yMQwqtDAB)
 
-![](https://quicknode.quicknode-ipfs.com/ipfs/QmZuh6x4B55yQ8u1T8P7TSXwcJzKqFj6HwrrP5VuLh3STS)
+3. After successfully connecting the wallet, enter the cross-chain amount.
 
-![](https://quicknode.quicknode-ipfs.com/ipfs/QmNU8QEGK3TZDPgvSWJYQgHGt3ZKw14hRt8qGvMG8SWTEg)
+![](https://quicknode.quicknode-ipfs.com/ipfs/QmVjFaSk1GLnYPSWGXRzELS8SNR38xkf4tp1syVSKBcfrq)
 
-3. Claim test coins.
+4. After clicking “Deposit Funds”, confirm by signing in the wallet.
 
-![](https://quicknode.quicknode-ipfs.com/ipfs/QmS7Ho43g6Wu5axtLXB4pJwDvGzGzMnnzB3WbHTCFJ78nR)
+![](https://quicknode.quicknode-ipfs.com/ipfs/QmY3gqwLFyk535KfAnDT6MSSjbPSkmvaswzFJsUhc3nRj3)
 
-4. Enter the amount and click **'Deposit Funds'**, then confirm the payment in your wallet.
+5. The transaction status can be viewed through the browser or bridge history after the bridge submission has been successfully made.
+Notice that only after the transaction on the BTC mainnet has exceeded 6 confirmations will the bridge transaction be conducted on the B² Mainnet. The waiting time is 1-2 hours.
 
-![](https://quicknode.quicknode-ipfs.com/ipfs/QmfLMCrLo1ihTSugDSbTW3VeDkruGQnPGTHUBGQGsC7nww)
+![](https://quicknode.quicknode-ipfs.com/ipfs/QmeFgkswhr8YtwRz49R51JDWk4TQFedNF6bj5ErSRpRR1G)
 
-5. Successful.
+6. Verify if transactions on both chains are successful on the “bridge history” page.
 
-![](https://quicknode.quicknode-ipfs.com/ipfs/QmQ6NboX1EYp8HnkJ5cU1znjSLKszBPyWftapZfMJjQteB)
+![](https://quicknode.quicknode-ipfs.com/ipfs/QmcuzSTjw2oPtXWbG2SRU4gpBEtLnMBazMQawCBFPGbrxn)
 
-6. Check the status in the transaction history.
+7. If transactions on both chains are successful, click the address in the top right corner to check if the balance is correct.
 
-![](https://quicknode.quicknode-ipfs.com/ipfs/QmUnMMyHU5rYeYPBGeoxsSc1tNb41xEw9hvsjJu5GhWXJW)
-
-7. After **'success'** is displayed.
-
-![](https://quicknode.quicknode-ipfs.com/ipfs/QmWKpCYi6eeu3D3J16jqkc6W8GZ8tEWSoJcfto9hW4yVim)
-
-8. Return to Odyssey, click the refresh button, and it will display the 50 points obtained from completing the cross-chain transaction.
-
-![](https://quicknode.quicknode-ipfs.com/ipfs/QmXoipigmycRcM6NxkM1hgnotuWFCSvrATiQEcepigAz92)
-
-![](https://quicknode.quicknode-ipfs.com/ipfs/QmZug7UCG7QMdzeyy6MZezTfKeb2G3J6kCNobCF91rqdeC)
+![](https://quicknode.quicknode-ipfs.com/ipfs/QmTe9abDg1urAwNTMaVEY9NA6igv5UcPrDsViQL64qHW1G)
