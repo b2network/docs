@@ -13,11 +13,9 @@
 	    - [B² Commitment](tech_architecture/b2_commitment.md)
 	    - [Bitcoin Network](tech_architecture/bitcoin.md)
 - For Users
-	- [Connecting to B² Testnet](users/connect.md)  
-	- [Join B² Network Odyssey](users/join_odyssey.md)
-	- [Get test BTC](users/faucet.md)
-	- [Bridge to B² Testnet](users/bridge.md)
-	- [Haven Testnet Guide](users/haven_guide.md)
+	- [Connecting to B² Mainnet](users/connect.md)  
+	- [Join B² Network Discovery](users/join_discovery.md)
+	- [Bridge to B² Mainnet](users/bridge.md)
 	- [Transfer BlockHeadz NFT](users/transfer_blockheadz.md)
 - For Developers
 	- [Write a contract](developers/write_contract.md)
