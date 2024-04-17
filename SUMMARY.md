@@ -14,6 +14,7 @@
 	    - [Bitcoin Network](tech_architecture/bitcoin.md)
 - For Users
 	- [Connecting to B² Mainnet](users/connect.md)  
+	- [Set Gas Price](users/set_gas_price.md)
 	- [Join B² Network Discovery](users/join_discovery.md)
 	- [Bridge to B² Mainnet](users/bridge.md)
 	- [Transfer BlockHeadz NFT](users/transfer_blockheadz.md)
