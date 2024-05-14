@@ -19,7 +19,8 @@
 	- [Bridge to B² Mainnet](users/bridge.md)
 	- [Transfer BlockHeadz NFT](users/transfer_blockheadz.md)
 - For Developers
-	- [Write a contract](developers/write_contract.md)
+	- [Basic information](developers/basic_information.md)
+ 	- [Write a contract](developers/write_contract.md)
 	- [Deploy a contract with Hardhat](developers/deploy_with_hardhat.md)
  	- [Integrate Particle Account Abstraction](developers/account_abstraction_with_particle_network.md)
  	- [Integrate Oracle Services](developers/oracle_service.md)
