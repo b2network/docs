@@ -22,6 +22,12 @@ Once your wallet is connected, click the "Bridge to B²" button.
 
 ![](https://quicknode.quicknode-ipfs.com/ipfs/QmZ5SbB9TMvmCFzboU8SoPApEa2kTRgciSxQkyCXaKtz2e)
 
+Please be aware that in the process of bridging from the Bitcoin Mainnet to the B² Mainnet, we currently only support Native Segwit (P2WPKH) and Taproot (P2TR) address types. Nested Segwit (P2SH P2WPKH) and Legacy (P2PKH) address types are not supported at this time. It's important to note that we anticipate supporting all address types in the next version.
+
+Moreover, if you use an unsupported address type for bridging, you will receive the following notification.
+
+![](https://quicknode.quicknode-ipfs.com/ipfs/QmaUScF6bEuCTbKscq2jeEhNKx9HPorPhBjySAEhcSVFMw)
+
 The Bridge feature supports batch operations, allowing you to select up to 10 NFTs for cross-chain transactions simultaneously.
 
 ![](https://quicknode.quicknode-ipfs.com/ipfs/QmQiSUGngJYbtC2KaBrYGR7JR8FNDgxE4fZPu9vQLQSkJK)
