@@ -1,19 +1,28 @@
-# Install plugin
+# Verify a Smart Contract with hardhat in Blockscout
+
+## Install plugin
+
 1. `npm install --save-dev @nomicfoundation/hardhat-verify`
+
 2. And add the following statement to your hardhat.config.js:
+
     ```js
     require("@nomicfoundation/hardhat-verify");
     ```
+
     Or, if you are using TypeScript, add this to your hardhat.config.ts:
+
     ```ts
     import "@nomicfoundation/hardhat-verify";
     ```
-# Config hardhat.config.js or hardhat.config.ts
+
+## Config hardhat.config.js or hardhat.config.ts
+
 ```js
 module.exports = {
   networks{
-    habitat: {
-      url: 'https://habitat-rpc.bsquared.network',
+    b2testnet: {
+      url: 'https://b2testnet-rpc.bsquared.network',
       chainId: 1123,
       accounts: {
         mnemonic: process.env.MNEMONIC,
@@ -25,15 +34,15 @@ module.exports = {
   },
   etherscan: {
     apiKey: {
-      habitat: "abc"
+      b2testnet: "abc"
     },
     customChains: [
        {
-        network: "habitat",
+        network: "b2testnet",
         chainId: 1123,
         urls: {
-          apiURL: "https://habitat-backend.bsquared.network/api",
-          browserURL: "https://habitat-explorer.bsquared.network"
+          apiURL: "https://b2-testnet.alt.technology/",
+          browserURL: "https://testnet-blockscout.bsquared.network/"
         }
       },
       }
@@ -41,11 +50,14 @@ module.exports = {
   },
 ```
 
-# Verify
-1. Assuming we have deployed the Counter contract [B² Network address details for 0xbcd2B61F456CB5D07bEf2B0eD5f5B9D5ED84C1c6 | Blockscout](https://habitat-explorer.bsquared.network/address/0xbcd2B61F456CB5D07bEf2B0eD5f5B9D5ED84C1c6?tab=contract)
-1. We can use the following cli to verify
+## Verify
+
+1. Assuming we have deployed the Counter contract [B² Network address details for 0xbcd2B61F456CB5D07bEf2B0eD5f5B9D5ED84C1c6 | Blockscout](https://b2testnet-explorer.bsquared.network/address/0xbcd2B61F456CB5D07bEf2B0eD5f5B9D5ED84C1c6?tab=contract)
+
+2. We can use the following cli to verify
+
     ```bash
-    npx hardhat --network habitat --verbose --show-stack-traces verify --contract contracts/Counter.sol:Counter 0xbcd2B61F456CB5D07bEf2B0eD5f5B9D5ED84C1c6
+    npx hardhat --network b2testnet --verbose --show-stack-traces verify --contract contracts/Counter.sol:Counter 0xbcd2B61F456CB5D07bEf2B0eD5f5B9D5ED84C1c6
     hardhat:core:vars:varsManager Creating a new instance of VarsManager +0ms
     hardhat:core:vars:varsManager Loading ENV variables if any +1ms
     hardhat:core:global-dir Client Id found: 30b00202-0ea3-4d3d-abad-b9daa04e0407 +0ms
@@ -56,7 +68,7 @@ module.exports = {
     hardhat:core:hre Running task verify:get-constructor-arguments +1ms
     hardhat:core:hre Running task verify:get-libraries +1ms
     hardhat:core:hre Running task verify:verify +0ms
-    hardhat:core:hre Creating provider for network habitat +27ms
+    hardhat:core:hre Creating provider for network b2testnet +27ms
     hardhat:core:analytics Hit for task sent successfully +673ms
     hardhat:core:hre Running verify:verify's super +1s
     hardhat:core:hre Running task verify:get-compiler-versions +2ms
@@ -64,7 +76,9 @@ module.exports = {
     The contract 0xbcd2B61F456CB5D07bEf2B0eD5f5B9D5ED84C1c6 has already been verified
     hardhat:core:cli Killing Hardhat after successfully running task verify +0ms
     ```
-1. For more features, please refer to
+
+3. For more features, please refer to
+
     ```bash
     t14p hardhat-etherjs-v5-js git:(main) ✗ npx hardhat verify --help
     Hardhat version 2.19.5
@@ -89,5 +103,7 @@ module.exports = {
     For global options help run: hardhat help
 
     ```
-# Reference
+
+## Reference
+
 1. [hardhat/packages/hardhat-verify at main · NomicFoundation/hardhat](https://github.com/nomicfoundation/hardhat/tree/main/packages/hardhat-verify)
