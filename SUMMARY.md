@@ -22,6 +22,8 @@
 	- [Basic information](developers/basic_information.md)
  	- [Write a contract](developers/write_contract.md)
 	- [Deploy a contract with Hardhat](developers/deploy_with_hardhat.md)
+	- [Verify contract code with Hardhat in Explorer](developers/how_to_verify_contract_l2scan.md)
+	- [Verify contract code with Hardhat in Blockscout](developers/how_to_verify_contract_blockscout.md)
  	- [Integrate Particle Account Abstraction](developers/account_abstraction_with_particle_network.md)
  	- [Integrate Oracle Services](developers/oracle_service.md)
 - [Press-Kit](main/press-kit.md)
