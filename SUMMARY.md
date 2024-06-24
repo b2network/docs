@@ -26,4 +26,5 @@
 	- [Verify contract code with Hardhat in Blockscout](developers/how_to_verify_contract_blockscout.md)
  	- [Integrate Particle Account Abstraction](developers/account_abstraction_with_particle_network.md)
  	- [Integrate Oracle Services](developers/oracle_service.md)
+ 	- [Deploy a rollup node](nodes/running_rollup_node.md)
 - [Press-Kit](main/press-kit.md)
