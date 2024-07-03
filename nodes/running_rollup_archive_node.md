@@ -32,7 +32,7 @@ Please refer to the [Install Docker Compose](https://docs.docker.com/compose/ins
 Below is the releated files
 | Snapshot Data     | Size | Download Link | sha256sum
 | ----------- | ----------- | ----------- | ----------- |
-| 2024-06-26    | 78G     | [Mirror](https://download.bsquared.network/archive-data.tar.gz) |95a5c787d769c2fe70e985f9b535f7dfd5949c500070d40ddac4225657548732
+| 2024-07-02   | 78G     | [Mirror](https://download.bsquared.network/archive-data.tar.gz) |d7c64be969242e62471b45d69959421e2277da5475fa3ec0eba3b8377f736809
 | 2024-06-26    | 4.0K     | [rollup.json](https://download.bsquared.network/mainnet/rollup.json) |f54528da6468e0d72b2b8623a3ab87ed509b9910c3109a059c8dc143a1b34b8a
 | 2024-06-26    | 9.0M     | [genesis.json](https://download.bsquared.network/mainnet/genesis.json) |fc5aba6864a1123a5f2104283d90ab412238f7abb556d147913f0d990fff7011
 
@@ -84,7 +84,7 @@ services:
       GETH_AUTHRPC_ADDR: "0.0.0.0"
       GETH_AUTHRPC_PORT: "8551"
       GETH_AUTHRPC_JWTSECRET: "/jwt.txt"
-      GETH_BOOTNODES: "enode://176f80775240c053945d68ba74f87bca5df97a369d2d33f9b93dfb08faddbcdf68eddd19d7fb91089dda38973384d1ef61eb735bfb362986ebe85c57ff94a616@b2-mainnet-geth-p2p.altlayer.network:30303"
+      GETH_BOOTNODES: "enode://176f80775240c053945d68ba74f87bca5df97a369d2d33f9b93dfb08faddbcdf68eddd19d7fb91089dda38973384d1ef61eb735bfb362986ebe85c57ff94a616@b2-mainnet-geth-p2p.altlayer.network:30303,enode://b6a3dd72aaa5494d7fb79c226af015a8ed515e401c765564d08e6b9b730b3c70e4e66658f1d45a9c62def7e061878a553ff19704b966c9ed98f1ca90eed09b05@b2-mainnet-bootnode1.bsquared.network:30303,enode://a1c925891787aadb1652c424dd3f7f0f037daf1337ffa03db7b70eed9b5c0853828881b487c3e0dd5c677680ec12d072ba772982fd56d86f846e85998b6191de@b2-mainnet-bootnode2.bsquared.network:30303"
       GETH_METRICS: "true"
       GETH_SYNCMODE: "full"
       GETH_GCMODE: "archive"
@@ -118,7 +118,7 @@ services:
       OP_NODE_P2P_DISCOVERY_PATH: "/data/node/opnode_discovery_db"
       OP_NODE_P2P_PEERSTORE_PATH: "/data/node/opnode_peerstore_db"
       OP_NODE_P2P_PRIV_PATH: "/data/node/opnode_p2p_priv.txt"
-      OP_NODE_P2P_STATIC: "/dns/b2-mainnet-node-p2p.altlayer.network/tcp/9003/p2p/16Uiu2HAmGM3EGwU7LBz64y2dc9RzUNNBSNeuNbrCXUnxxGQLgXST"
+      OP_NODE_P2P_STATIC: "/dns/b2-mainnet-node-p2p.altlayer.network/tcp/9003/p2p/16Uiu2HAmGM3EGwU7LBz64y2dc9RzUNNBSNeuNbrCXUnxxGQLgXST,/dns/b2-mainnet-bootnode1.bsquared.network/tcp/9222/p2p/16Uiu2HAm4AvoW3JmjHBswqCyf9fA91GDQNZQPt2ZM5bTWASMGmQS,/dns/b2-mainnet-bootnode2.bsquared.network/tcp/9222/p2p/16Uiu2HAmGJ7doABBynM5yn5CncicqwizY8xWPTXJTojm9BpS7N4x"
     depends_on:
     - l2
     restart: always
