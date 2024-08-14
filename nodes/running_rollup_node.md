@@ -32,7 +32,7 @@ Please refer to the [Install Docker Compose](https://docs.docker.com/compose/ins
 Below is the releated files
 | Snapshot Data     | Size | Download Link | sha256sum
 | ----------- | ----------- | ----------- | ----------- |
-| 2024-07-31   | 14G     | [Mirror](https://download.bsquared.network/db.tar.gz) | b1c8b722586d25769355cd0c51db94c6991f0be91c6d6fa407c19d94794a2e20 
+| 2024-08-13   | 14G     | [Mirror](https://download.bsquared.network/db.tar.gz) | 0a550606f8a6e0a82ba1ddb8b94585dcdde3702d0b8be0c585a35f332c55eb8e
 | 2024-06-14     | 4.0K     | [rollup.json](https://download.bsquared.network/mainnet/rollup.json) |f54528da6468e0d72b2b8623a3ab87ed509b9910c3109a059c8dc143a1b34b8a
 | 2024-06-14     | 9.0M     | [genesis.json](https://download.bsquared.network/mainnet/genesis.json) |fc5aba6864a1123a5f2104283d90ab412238f7abb556d147913f0d990fff7011
 
@@ -67,7 +67,8 @@ Create  a ``docker-compose.yaml`` file and mount the data directory and json fil
 version: "3.9"
 services:
   l2:
-    image: ghcr.io/b2network/op-geth:v1.0
+    #image: ghcr.io/b2network/op-geth:v1.0
+    image: us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:7c2819836018bfe0ca07c4e4955754834ffad4e0 
     container_name: l2
     environment:
       GETH_VERBOSITY: "3"
@@ -94,10 +95,12 @@ services:
     - ./data/jwt.txt:/jwt.txt
 
   op-node:
-    image: us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node:99a53381019d3571359d989671ccf70f8d69dfd9
+    #image: us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node:99a53381019d3571359d989671ccf70f8d69dfd9
+    image:  us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node:f8143c8cbc4cc0c83922c53f17a1e47280673485 
     container_name: op-node
     environment:
-      OP_NODE_SYNCMODE: "execution-layer"
+      #OP_NODE_SYNCMODE: "execution-layer"
+      OP_NODE_SYNCMODE: "consensus-layer"
       OP_NODE_L1_TRUST_RPC: "true"
       OP_NODE_SEQUENCER_L1_CONFS: "10"
       OP_NODE_VERIFIER_L1_CONFS:  "10"
