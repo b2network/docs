@@ -63,11 +63,20 @@ openssl rand -hex 32 > ./data/jwt.txt
 ## Setup B2 Archive Node
 
 Create  a ``docker-compose.yaml`` file and mount the data directory and json files which downloaded above.
+
+**Changelog for the ``docker-compose.yaml``:**
+**Users who have already been set up can also upgrade,The upgrade will improve block synchronization.**
+
+- L2 image change to ``us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:7c2819836018bfe0ca07c4e4955754834ffad4e0``
+- OP image change to ``us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node:f8143c8cbc4cc0c83922c53f17a1e47280673485``
+- OP_NODE_SYNCMODE: "consensus-layer"
+
 ```bash
 version: "3.9"
 services:
   l2:
-    image: ghcr.io/b2network/op-geth:v1.101311.0
+    #image: ghcr.io/b2network/op-geth:v1.101311.0
+    image: us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:7c2819836018bfe0ca07c4e4955754834ffad4e0
     container_name: l2
     environment:
       GETH_VERBOSITY: "3"
@@ -97,10 +106,12 @@ services:
     - ./data/jwt.txt:/jwt.txt
 
   op-node:
-    image: us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node:99a53381019d3571359d989671ccf70f8d69dfd9
+    #image: us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node:99a53381019d3571359d989671ccf70f8d69dfd9
+    image: us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node:f8143c8cbc4cc0c83922c53f17a1e47280673485
     container_name: op-node
     environment:
-      OP_NODE_SYNCMODE: "execution-layer"
+      #OP_NODE_SYNCMODE: "execution-layer"
+      OP_NODE_SYNCMODE: "consensus-layer"
       OP_NODE_L1_TRUST_RPC: "true"
       OP_NODE_SEQUENCER_L1_CONFS: "10"
       OP_NODE_VERIFIER_L1_CONFS: "10"

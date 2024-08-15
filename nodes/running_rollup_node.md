@@ -63,6 +63,14 @@ openssl rand -hex 32 > ./data/jwt.txt
 ## Setup B2 Node
 
 Create  a ``docker-compose.yaml`` file and mount the data directory and json files which downloaded above.
+
+**Changelog for the ``docker-compose.yaml``:** 
+**Users who have already been set up can also upgrade,The upgrade will improve block synchronization.**
+
+- L2 image change to ``us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:7c2819836018bfe0ca07c4e4955754834ffad4e0``
+- OP image change to ``us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node:f8143c8cbc4cc0c83922c53f17a1e47280673485``
+- OP_NODE_SYNCMODE: "consensus-layer"
+
 ```bash
 version: "3.9"
 services:
