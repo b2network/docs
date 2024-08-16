@@ -32,7 +32,7 @@ Please refer to the [Install Docker Compose](https://docs.docker.com/compose/ins
 Below is the releated files
 | Snapshot Data     | Size | Download Link | sha256sum
 | ----------- | ----------- | ----------- | ----------- |
-| 2024-08-13   | 14G     | [Mirror](https://download.bsquared.network/db.tar.gz) | 0a550606f8a6e0a82ba1ddb8b94585dcdde3702d0b8be0c585a35f332c55eb8e
+| 2024-08-16   | 13.1G     | [Mirror](https://download.bsquared.network/db.tar.gz) | e8bf1c140073bc6dfdbbeaa18f14e388eafdbdf8cb61fbc46deda3e600039689 
 | 2024-06-14     | 4.0K     | [rollup.json](https://download.bsquared.network/mainnet/rollup.json) |f54528da6468e0d72b2b8623a3ab87ed509b9910c3109a059c8dc143a1b34b8a
 | 2024-06-14     | 9.0M     | [genesis.json](https://download.bsquared.network/mainnet/genesis.json) |fc5aba6864a1123a5f2104283d90ab412238f7abb556d147913f0d990fff7011
 
@@ -65,18 +65,20 @@ openssl rand -hex 32 > ./data/jwt.txt
 Create  a ``docker-compose.yaml`` file and mount the data directory and json files which downloaded above.
 
 **Changelog for the ``docker-compose.yaml``:** 
+
 **Users who have already been set up can also upgrade,The upgrade will improve block synchronization.**
 
-- L2 image change to ``us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:7c2819836018bfe0ca07c4e4955754834ffad4e0``
-- OP image change to ``us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node:f8143c8cbc4cc0c83922c53f17a1e47280673485``
-- OP_NODE_SYNCMODE: "consensus-layer"
+- L2 image change to ``us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:v1.101315.2``
+- OP image change to ``us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node:v1.7.7``
+- OP_NODE_P2P_STATIC: "/dns/b2-mainnet-node-p2p.altlayer.network/tcp/9003/p2p/16Uiu2HAm1hkacTvu8HzwPs2Mv8cHo6RfMX9vbEi4T8FuXFRK7VEM,/dns/b2-mainnet-bootnode1.bsquared.network/tcp/9222/p2p/16Uiu2HAm4AvoW3JmjHBswqCyf9fA91GDQNZQPt2ZM5bTWASMGmQS,/dns/b2-mainnet-bootnode2.bsquared.network/tcp/9222/p2p/16Uiu2HAmGJ7doABBynM5yn5CncicqwizY8xWPTXJTojm9BpS7N4x"
+- GETH_BOOTNODES: "enode://55b79017f15cad10bb8ad433fb991e6a0d0ca5ccef3f9123618869ee405d61b564a44dee1b87c47e62dba51e63a9172e356714a7ecdf20594d041ddf9013136c@b2-mainnet-geth-p2p.altlayer.network:30303,enode://b6a3dd72aaa5494d7fb79c226af015a8ed515e401c765564d08e6b9b730b3c70e4e66658f1d45a9c62def7e061878a553ff19704b966c9ed98f1ca90eed09b05@b2-mainnet-bootnode1.bsquared.network:30303,enode://a1c925891787aadb1652c424dd3f7f0f037daf1337ffa03db7b70eed9b5c0853828881b487c3e0dd5c677680ec12d072ba772982fd56d86f846e85998b6191de@b2-mainnet-bootnode2.bsquared.network:30303"
 
 ```bash
 version: "3.9"
 services:
   l2:
     #image: ghcr.io/b2network/op-geth:v1.0
-    image: us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:7c2819836018bfe0ca07c4e4955754834ffad4e0 
+    image: us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:v1.101315.2 
     container_name: l2
     environment:
       GETH_VERBOSITY: "3"
@@ -104,11 +106,10 @@ services:
 
   op-node:
     #image: us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node:99a53381019d3571359d989671ccf70f8d69dfd9
-    image:  us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node:f8143c8cbc4cc0c83922c53f17a1e47280673485 
+    image: us-docker.pkg.dev/oplabs-tools-artifacts/images/op-node:v1.7.7 
     container_name: op-node
     environment:
-      #OP_NODE_SYNCMODE: "execution-layer"
-      OP_NODE_SYNCMODE: "consensus-layer"
+      OP_NODE_SYNCMODE: "execution-layer"
       OP_NODE_L1_TRUST_RPC: "true"
       OP_NODE_SEQUENCER_L1_CONFS: "10"
       OP_NODE_VERIFIER_L1_CONFS:  "10"
