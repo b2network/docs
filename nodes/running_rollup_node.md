@@ -32,7 +32,7 @@ Please refer to the [Install Docker Compose](https://docs.docker.com/compose/ins
 Below is the releated files
 | Snapshot Data     | Size | Download Link | sha256sum
 | ----------- | ----------- | ----------- | ----------- |
-| 2025-01-24   | 40G     | [Mirror](https://download.bsquared.network/db.tar.gz) | 1d6c5a52cc0b075b966b27409cba72a22399ac67e0e12aa161eea27b6cdc6e11 
+| 2025-02-01   | 41G     | [Mirror](https://download.bsquared.network/db.tar.gz) | a878c9144c976869f017c2caa9ba4cafa1ba3e55e19ce6f62ab8bc39df0e4d2a 
 | 2024-06-14     | 4.0K     | [rollup.json](https://download.bsquared.network/mainnet/rollup.json) |f54528da6468e0d72b2b8623a3ab87ed509b9910c3109a059c8dc143a1b34b8a
 | 2024-06-14     | 9.0M     | [genesis.json](https://download.bsquared.network/mainnet/genesis.json) |fc5aba6864a1123a5f2104283d90ab412238f7abb556d147913f0d990fff7011
 
