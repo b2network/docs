@@ -2,7 +2,7 @@
 
 - [B² Network](README.md)
 	- [Overview](main/overview.md)
-- [Buzz Guide](users/buzz_guide.md)
+- [Airdrop Guide](users/airdrop_guide.md)
 - [Zero-Knowledge Proof Verification Commitment for ZK-Rollup on Bitcoin](main/zpvc.md)
 - [Tech Architecture](tech_architecture/architecture.md)
 	- [Rollup Layer](tech_architecture/rollup_layer.md) 
