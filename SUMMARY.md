@@ -28,4 +28,5 @@
  	- [Integrate Oracle Services](developers/oracle_service.md)
  	- [Deploy a rollup node](nodes/running_rollup_node.md)
  	- [Deploy a rollup archive node](nodes/running_rollup_archive_node.md)
+- [Tokenomics](main/B2_Tokenomics.md)
 - [Press-Kit](main/press-kit.md)
