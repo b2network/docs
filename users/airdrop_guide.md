@@ -3,55 +3,54 @@
 ## Airdrop Page Overview
 
 This airdrop consists of four main campaigns: the Testnet Odyssey, BUZZ Phase I (Pre-Stake Campaign), BUZZ Phase II (Mainnet Launch Campaign), and BUZZ Farming. Each campaign is represented by a dedicated card, as shown below.  
-![airdrop_1](https://github.com/user-attachments/assets/f10b203b-760a-4a6e-a05d-c36dbebe2aa2)
+![airdrop_1](https://github.com/user-attachments/assets/2a5d5dc7-a82f-4971-9ec3-f5d591e45c87)
 
 Your eligible airdrop amount will be displayed on the homepage of the airdrop page. To proceed, connect your wallet and register an EVM-compatible address that can receive the airdrop. Once registration is complete, the airdrop will be credited to the bound address.
 
 **NOTE⚠️:** Please double-check the address before submitting. Once registered, the airdrop recipient address **cannot** be changed.
 
-![airdrop_2](https://github.com/user-attachments/assets/94f2f0f3-8bb2-461d-8fb6-121a79e2122b)
-![airdrop_3](https://github.com/user-attachments/assets/8d945e35-6049-4ad2-8401-a7bce639889d)
+![airdrop_2](https://github.com/user-attachments/assets/eb3edbe5-61f3-494d-adbf-8e193a43e01b)
 
+![airdrop_3](https://github.com/user-attachments/assets/c63b1702-c86f-4aab-886d-5c7ca5f3fe08)
 
 ## BUZZ Stage I
 
 –Stake  
 1、First, connect your wallet (make sure it's the one holding your Mining Rigs NFTs), then go to the bottom-left of the page and click **“My Mining Rigs \- Stake Now.”**  
-![airdrop_4](https://github.com/user-attachments/assets/863d20e9-0b9e-4f7d-852e-b8cfa75b59f9)
+![airdrop_4](https://github.com/user-attachments/assets/c679d1ef-094c-4c1c-9130-a5bcbbe717b0)
 
 2、Select the Mining Rigs you wish to stake and enter the amount. Then click **“Approve.”**  
-![airdrop_5](https://github.com/user-attachments/assets/fec2dc36-07e4-46ea-8dbd-51e89e0360d6)
+![airdrop_5](https://github.com/user-attachments/assets/395e8114-9f19-4e5f-9291-3ea8fc91b663)
 
 3、After signing the approval transaction, click **“Stake Now”** again to confirm. You’ll need to sign the staking transaction as well.  
-![airdrop_6](https://github.com/user-attachments/assets/d8181111-60c1-4cc0-ba9e-d2f640ab8cf6)
+![airdrop_6](https://github.com/user-attachments/assets/21050f63-230a-4b3b-adc3-48883faf2ca0)
 
 4、Once the transaction is successful, a message saying **“Staking Succeeds\!”** will appear, along with the corresponding transaction hash.  
-![airdrop_7](https://github.com/user-attachments/assets/30205571-e737-4c7c-b140-484c8f1f7e3f)
+![airdrop_7](https://github.com/user-attachments/assets/2055d140-9b42-4ed5-baa4-a8dda1135070)
 
 
 – Unstake  
 5、To unstake, go to **“My Mining Rigs \- Unstake.”**  
-![airdrop_8](https://github.com/user-attachments/assets/90328746-831d-4b28-8cad-30934a5609aa)
+![airdrop_8](https://github.com/user-attachments/assets/29df9e16-39f0-4ce9-90c9-989f53556f6a)
 
 6、Select the quantity of Mining Rigs you want to unstake and click **“Unstake Now.”**  
-![airdrop_9](https://github.com/user-attachments/assets/22df846b-a694-435f-88d9-7087cff5d5c7)
+![airdrop_9](https://github.com/user-attachments/assets/a4a6bcd7-9676-431c-a781-9c4e612f44cf)
 
 7、If successful, a message saying **“UnStake Succeeds\!”** will be displayed, along with the transaction hash.  
-![airdrop_10](https://github.com/user-attachments/assets/aaf9e522-adc4-484d-bdff-4933d69186ed)
+![airdrop_10](https://github.com/user-attachments/assets/54fc3130-bdfd-4d8f-8957-aeaee4eb3c3a)
 
 – Stake Blockheadz  
 8、If you own a Blockheadz, you can also stake it on this page.  
-![airdrop_11](https://github.com/user-attachments/assets/6027550f-9a26-4e6e-9e9d-c76639098bf2)
+![airdrop_11](https://github.com/user-attachments/assets/2db97f3c-7f71-40ee-a846-83d916cf544d)
 
 9、Carefully read the **Staking Notice**, then click **“Stake Now”** to proceed.  
-![airdrop_12](https://github.com/user-attachments/assets/54d9fc71-4712-481a-bd64-46fa93a712c5)
+![airdrop_12](https://github.com/user-attachments/assets/18a34926-ea03-4a12-b9b5-c7191e071b04)
 
 10、Select the Blockheadz you want to stake and click **“Stake Now.”**  
-![airdrop_13](https://github.com/user-attachments/assets/598d4e4b-064d-4cfc-9a2a-e682b3c0ff19)
+![airdrop_13](https://github.com/user-attachments/assets/15b59b83-7fb1-4c26-a269-083c282fcf80)
 
 11、Upon successful staking, the message **“Staking Succeeds\!”** will appear along with the transaction hash.  
-![airdrop_14](https://github.com/user-attachments/assets/52432161-90e8-401a-a5af-40c779d9d591)
-
+![airdrop_14](https://github.com/user-attachments/assets/bab51130-26b0-4dbb-ad3e-46b017a07cba)
 
 12、You can return to the previous page to view staking details.
 
@@ -71,7 +70,7 @@ The **“My Rewards”** section will display your staking rewards. Mining with 
 Each phase’s rewards will become claimable **30 days (T+30)** after that phase ends, with a **30-day claim window**.  
 Please make sure to claim your rewards within the specified period — **late claims will not be reissued.**
 
-![airdrop_15](https://github.com/user-attachments/assets/2d9683e0-cc35-4209-a3a2-2a1910a24ce6)
+![airdrop_15](https://github.com/user-attachments/assets/76d7fee7-337e-47bc-905a-dec29224f42a)
 
 
 ## BUZZ Stage II & BUZZ Farming
@@ -80,25 +79,24 @@ After connecting your wallet and binding an **EVM-compatible address** (please n
 
 Once registered, scroll down the page to view your $B2 rewards under the **Buzz Stage II Rewards** and **Buzz Farming Rewards** sections.
 
-![airdrop_16](https://github.com/user-attachments/assets/fe9fdae0-c27a-499e-9330-e48216d84e37)
-
+![airdrop_16](https://github.com/user-attachments/assets/83de680a-f917-4aad-b62b-67f86c3c49be)
 
 ## Odyssey Airdrop Raffle
 
 1、Users who participated in the Odyssey campaign can connect their wallet on the airdrop page and select **“Odyssey Campaign Rewards”**. There, you’ll see your accumulated Odyssey Points, which can be used to enter a raffle for a chance to win $B2 tokens and Blockheadz NFTs.  
-![airdrop_17](https://github.com/user-attachments/assets/97bbec02-ceec-497c-a45a-fd15fe39e861)
+![airdrop_17](https://github.com/user-attachments/assets/87b64109-9c21-49db-94ae-6c7a9c64e48a)
 
 2、Click **“Draw”** on the Odyssey raffle card to convert your Odyssey Points into **Raffle Tickets**, based on the redemption tiers.[\[View full airdrop rules on Medium\]](https://blog.bsquared.network/b%C2%B2-airdrop-unlocking-guide-fb353298f860)  
-![airdrop_18](https://github.com/user-attachments/assets/4f0c20e9-fc1c-4b26-8a5c-d1f81dc95dbf)
+![airdrop_18](https://github.com/user-attachments/assets/b851b301-e216-400f-80f0-8a6df55e85fb)
 
 3、If you win, the prize details will be displayed along with a transaction hash for verification.  
-![airdrop_19](https://github.com/user-attachments/assets/aceb235b-bc33-4a4e-a0e7-dc4236b0daf1)
+![airdrop_19](https://github.com/user-attachments/assets/d5513255-7d24-4972-a8a4-a5c42208c2a7)
 
-![airdrop_20](https://github.com/user-attachments/assets/d515d179-75df-4324-9e54-fcf5e2251ce1)
+![airdrop_20](https://github.com/user-attachments/assets/43fd19bc-d05b-4082-9eb1-f0769a64817c)
 
 
 4、If you don’t win, a “No Prize” message will appear on the page.  
-![airdrop_21](https://github.com/user-attachments/assets/1fcb97d5-3547-42da-8d93-245387359987)
+![airdrop_21](https://github.com/user-attachments/assets/dbfa8ac4-953a-44d1-9523-c0f3b2ad6475)
 
 5、If you win, return to the airdrop homepage to **submit your address and claim your rewards.**
 
@@ -107,7 +105,7 @@ Once registered, scroll down the page to view your $B2 rewards under the **Buzz 
 **To participate:**
 
 1）Connect your wallet and bind an EVM-compatible address (non-EVM addresses are not eligible).
-![airdrop_22](https://github.com/user-attachments/assets/bf5d1d72-5f36-425d-aa18-80fce2c1ae56)
+![airdrop_22](https://github.com/user-attachments/assets/1914f517-0526-4e6e-849a-b974f486115c)
 
 2）Click **“Register Now”** to complete the process and begin claiming.  
-![airdrop_23](https://github.com/user-attachments/assets/1adf3250-762f-493c-81ea-9d5a38dcff2c)
+![airdrop_23](https://github.com/user-attachments/assets/3c1e94ec-bf58-4568-b47b-026d1fcc9e5e)
