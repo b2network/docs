@@ -18,6 +18,7 @@
 	- [Join B² Network Discovery](users/join_discovery.md)
 	- [Bridge to B² Mainnet](users/bridge.md)
 	- [Transfer BlockHeadz NFT](users/transfer_blockheadz.md)
+	- [Add B2 token on BNB Chain](users/add_b2_bnbchain.md)
 - For Developers
 	- [Basic information](developers/basic_information.md)
  	- [Write a contract](developers/write_contract.md)
