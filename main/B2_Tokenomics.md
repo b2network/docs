@@ -4,18 +4,6 @@
 ## Total Supply
 **210,000,000 B2**
 
-## B2 Token
-
-**Smart Contract on BNB Chain** [0x783c3f003f172c6Ac5AC700218a357d2D66Ee2a2](https://bscscan.com/token/0x783c3f003f172c6Ac5AC700218a357d2D66Ee2a2)
-
-**Management Address** [0x5153515feb9237D4fD097d53BD8830Ec3C88A90f](https://bscscan.com/address/0x5153515feb9237D4fD097d53BD8830Ec3C88A90f) (DEFAULT_ADMIN_ROLE, MINTER_ROLE)
-
-[0x5153515feb9237D4fD097d53BD8830Ec3C88A90f](https://bscscan.com/address/0x5153515feb9237D4fD097d53BD8830Ec3C88A90f) Signers:
-
-- bnb:0xbAa450159aa0FF430F8804CC8179023ad6037EBd
-- bnb:0x21A465cE148dec03685f8d58a74F01D08092472D
-- bnb:0x6E7F7ec95A85C0250375C991fEDa30A7B4C6FB58
-
 ## Token Allocation
 
 | Category                             | Percentage of Total Supply | B2 Amount         | Description                                                              | Initial Unlock        | Release Schedule                                       |
