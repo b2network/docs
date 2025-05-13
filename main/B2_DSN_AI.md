@@ -69,7 +69,7 @@ DSN-AI aims to provide a "low-coupling, high-trust, easy-evolution" foundational
    | type | bytes4 | Y | Event Type Code | 32-bit integer, identified in hexadecimal, e.g., 0x504C4E=PLAN, 0x584543=EXEC |
    | schema_hash | bytes32 | Y | Payload Mode Hash | Perform Keccak-256 on JSONSchema / Protobuf IDL; ensure consistent parsing across different Agents |
    | payload | bytes <= 65536 | Y | Business data | Serialized according to schema_hash corresponding pattern; optional GZIP compression |
-   | timestampt | uint64 | Y | Millisecond timestamp | Unix epoch ms; used for causal ordering and replay protection |
+   | timestamp | uint64 | Y | Millisecond timestamp | Unix epoch ms; used for causal ordering and replay protection |
    | nonce | uint64 | Y | Initiator's local counter | Incremented for the same issuer to prevent hash prefix collisions |
    | issuer | bytes20 | Y | Initiator Identifier | B² Rollup Account Address |
    | sig | bytes65 | Y | Digital Signature | secp256k1 (ECDSA) |
