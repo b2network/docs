@@ -560,7 +560,8 @@ Conduct post-analysis of the entire Signal flow, adjusting model weights, routin
 
 ### Typical Inter-layer Interaction Sequence
 
-![Inter-layer Interaction Example](https://i.ibb.co/RGwLgBVw/Agentic-AI-Interaction.png)
+![Inter-layer Interaction Example](https://github.com/user-attachments/assets/4a7ef1dc-73ba-4214-b51f-cb3d8383b624)
+
 
 This sequence demonstrates a complete closed loop from external events to execution feedback and then to learning optimization; all communication is Signal, requiring no synchronization locks.
 
@@ -688,7 +689,7 @@ In DSN-AI, "Task Flow" refers to the entire process sequence from user or system
 
 ### Example: Complete Signal Sequence for Cross-Chain Lightning Arbitrage
 
-![Cross-chain Lightning Arbitrage Signal Example](https://i.ibb.co/9HzKS4Ns/Cross-chain-Lightning-Arbitrage-Signal-Case.png)
+![Cross-chain_Lightning_Arbitrage_Signal_Case](https://github.com/user-attachments/assets/1d055ae9-95ee-447c-a6f1-3b163305540a)
 
 In the above sequence, the three steps of flash loan - exchange - repayment are managed by atomic_group; any failure in any step will trigger atomic_group.failed and execute a compensation transaction. Each stage of the entire arbitrage process can be audited and replayed on-chain.
 
@@ -1001,7 +1002,8 @@ In DSN-AI, the MoE Dispatcher is positioned at the intersection of "planning -> 
 
 ### Architecture Overview
 
-![MoE Architecture](https://i.ibb.co/BHQCGqQG/Mo-E-Architecture-Diagram.png))
+![MoE_Architecture](https://github.com/user-attachments/assets/fc5a6369-93af-4e4c-8709-c8b5908d49c5)
+
 
 * Router Network: Lightweight gating (200 K‑2 M parameters), input task embedding -> output expert weights.
 
