@@ -4,6 +4,7 @@
 	- [Overview](main/overview.md)
 - [Airdrop Guide](users/airdrop_guide.md)
 - [Zero-Knowledge Proof Verification Commitment for ZK-Rollup on Bitcoin](main/zpvc.md)
+- [A Decentralized Signal-Driven Network for Modular and Agentic Artificial Intelligence](main/B2_DSN_AI.md)
 - [Tech Architecture](tech_architecture/architecture.md)
 	- [Rollup Layer](tech_architecture/rollup_layer.md) 
 	- [DA Layer](tech_architecture/da_layer.md)
