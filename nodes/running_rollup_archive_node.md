@@ -29,38 +29,18 @@ Please refer to the [Install Docker Engine](https://docs.docker.com/engine/insta
 Please refer to the [Install Docker Compose](https://docs.docker.com/compose/install/standalone/)
 
 ## Download Snapshot Archive Data
-Below is the releated files
-| Snapshot Data     | Size | Download Link | sha256sum
-| ----------- | ----------- | ----------- | ----------- |
-|2025-06-28|946G| [Mirror](https://download.bsquared.network/archive-data.tar.gz)|d9190d8b7dd90206c5d90112557439dcbbbe541de8f94e062e68b529837dea76
-| 2024-06-26    | 4.0K     | [rollup.json](https://download.bsquared.network/mainnet/rollup.json) |f54528da6468e0d72b2b8623a3ab87ed509b9910c3109a059c8dc143a1b34b8a
-| 2024-06-26    | 9.0M     | [genesis.json](https://download.bsquared.network/mainnet/genesis.json) |fc5aba6864a1123a5f2104283d90ab412238f7abb556d147913f0d990fff7011
-
-First, Create the ``b2-node`` directory.
-the $PWD variable specifies the absolute path which you want.
-
-```sh
-mkdir -p $PWD/b2-node/data
-cd $PWD/b2-node
-wget -O ./data/archive-data.tar.gz  https://download.bsquared.network/archive-data.tar.gz
-tar -zxvf ./data/archive-data.tar.gz -C ./data/
-```
-
-
-Download the genesis file to `$PWD/b2-node/data`.
-
 ```bash
-wget -O ./data/rollup.json https://download.bsquared.network/mainnet/rollup.json
-wget -O ./data/genesis.json https://download.bsquared.network/mainnet/genesis.json
+docker run \
+  --rm \
+  --volume ./data:/data \
+  ghcr.io/b2network/bsquared-snapshpt-download:20250707-160537 \
+  mainnet-archivenode-snapshot /data
 ```
-Generate JWT Secret, The HTTP connection between your beacon node and execution node needs to be authenticated using a JWT token. This is the way to generate jwt secret by openssl.
-
+## Setup B2 Archive Node
+Generate jwt secret:
 ```bash
-apk add openssl
 openssl rand -hex 32 > ./data/jwt.txt
 ```
-
-## Setup B2 Archive Node
 
 Create  a ``docker-compose.yaml`` file and mount the data directory and json files which downloaded above.
 
@@ -93,7 +73,6 @@ services:
       GETH_WS_API: "web3,debug,eth,txpool,net,engine"
       GETH_AUTHRPC_ADDR: "0.0.0.0"
       GETH_AUTHRPC_PORT: "8551"
-      GETH_AUTHRPC_JWTSECRET: "/jwt.txt"
       GETH_BOOTNODES: "enode://55b79017f15cad10bb8ad433fb991e6a0d0ca5ccef3f9123618869ee405d61b564a44dee1b87c47e62dba51e63a9172e356714a7ecdf20594d041ddf9013136c@b2-mainnet-bootnodes.altlayer.network:32045,enode://ad371eb83f665586985f4482adc8bb7fff793370843d73124e8b23c7aa69f01b6db93e5782ccbf7524d04aa5345e6bd1feeca4ec7bb1a515c3af67484604a5a8@b2-mainnet-bootnodes.altlayer.network:32047,enode://274310e51ffbc42167dbf1adbcf0ef43f50db9f8f0c84d9f25ac6cf1659ca57b09c9398fbc881485865170c8090250b8b803cb2f1be11aa65b488b3c8337be2d@b2-mainnet-bootnodes.altlayer.network:32049,enode://7ddd900597dde5cca6508cf33264dd528b945563d3d6ff5d0d2b16ecf8e14ca92ebf44fdabe9ecef44532aa0caeb54945c7d40af9d5a08e4b81853308a91ed27@b2-mainnet-bootnode1.bsquared.network:30303,enode://01c15b6db86024b708a3f3e2cdea2769264bc81dc8997752b44b904daff98f2ca15ca1e3096ed601debe7ad0f057c12d30bf93aeaeb227a59443059402c57dec@b2-mainnet-bootnode2.bsquared.network:30303" 
       GETH_METRICS: "true"
       GETH_SYNCMODE: "full"

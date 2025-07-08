@@ -29,38 +29,19 @@ Please refer to the [Install Docker Engine](https://docs.docker.com/engine/insta
 Please refer to the [Install Docker Compose](https://docs.docker.com/compose/install/standalone/)
 
 ## Download Snapshot Data
-Below is the releated files
-| Snapshot Data     | Size | Download Link | sha256sum
-| ----------- | ----------- | ----------- | ----------- |
-|2025-06-27|49G| [Mirror](https://download.bsquared.network/db.tar.gz)|baec52efe0a275825aa5a56f066ae23eb416ebf3dc92b433812e2754626c6368
-| 2024-06-14     | 4.0K     | [rollup.json](https://download.bsquared.network/mainnet/rollup.json) |f54528da6468e0d72b2b8623a3ab87ed509b9910c3109a059c8dc143a1b34b8a
-| 2024-06-14     | 9.0M     | [genesis.json](https://download.bsquared.network/mainnet/genesis.json) |fc5aba6864a1123a5f2104283d90ab412238f7abb556d147913f0d990fff7011
-
-First, Create the ``b2-node`` directory.
-the $PWD variable specifies the absolute path which you want.
-
-```sh
-mkdir -p $PWD/b2-node/data
-cd $PWD/b2-node
-wget -O ./data/db.tar.gz  https://download.bsquared.network/db.tar.gz
-tar -zxvf ./data/db.tar.gz -C ./data/
-```
-
-
-Download the genesis file to `$PWD/b2-node/data`.
-
 ```bash
-wget -O ./data/rollup.json https://download.bsquared.network/mainnet/rollup.json
-wget -O ./data/genesis.json https://download.bsquared.network/mainnet/genesis.json
-```
-Generate JWT Secret, The HTTP connection between your beacon node and execution node needs to be authenticated using a JWT token. This is the way to generate jwt secret by openssl.
-
-```bash
-apk add openssl
-openssl rand -hex 32 > ./data/jwt.txt
+docker run \
+  --rm \
+  --volume ./data:/data \
+  ghcr.io/b2network/bsquared-snapshpt-download:20250707-160537 \
+  mainnet-fullnode-snapshot /data
 ```
 
 ## Setup B2 Node
+Generate jwt secret:
+```bash
+openssl rand -hex 32 > ./data/jwt.txt
+```
 
 Create  a ``docker-compose.yaml`` file and mount the data directory and json files which downloaded above.
 
@@ -126,7 +107,6 @@ services:
       OP_NODE_P2P_LISTEN_UDP_PORT: "9222"
       OP_NODE_P2P_DISCOVERY_PATH: "/data/node/opnode_discovery_db"
       OP_NODE_P2P_PEERSTORE_PATH: "/data/node/opnode_peerstore_db"
-      OP_NODE_P2P_PRIV_PATH: "/data/node/opnode_p2p_priv.txt"
       OP_NODE_P2P_STATIC: "/dns/b2-mainnet-bootnodes.altlayer.network/tcp/32046/p2p/16Uiu2HAm1hkacTvu8HzwPs2Mv8cHo6RfMX9vbEi4T8FuXFRK7VEM,/dns/b2-mainnet-bootnodes.altlayer.network/tcp/32048/p2p/16Uiu2HAm1oTTtY6QkUdVUY8qn86Aa6MPR8FxMR4VQzXKT6tCPEun,/dns/b2-mainnet-bootnodes.altlayer.network/tcp/32050/p2p/16Uiu2HAmJhSCro27M9ZQ4yPkEQjYcRx1QJ9BmzfunNPPHbJsXnGV,/dns/b2-mainnet-bootnode1.bsquared.network/tcp/9222/p2p/16Uiu2HAkwyquyg55Jnmo97czvXfB6Evove1C4jUdMoFRQEQkgbnn,/dns/b2-mainnet-bootnode2.bsquared.network/tcp/9222/p2p/16Uiu2HAmSP44jYc7aJVXJhKVoYUFqkotwpEU1zqxYCksvUWwcyFT"
     depends_on:
     - l2
