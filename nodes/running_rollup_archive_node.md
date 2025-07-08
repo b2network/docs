@@ -36,6 +36,9 @@ docker run \
   ghcr.io/b2network/bsquared-snapshpt-download:20250707-160537 \
   mainnet-archivenode-snapshot /data
 ```
+
+**The snapshot file will be updated every Friday. The download will be temporarily unavailable. Please wait a while and try again.**
+
 ## Setup B2 Archive Node
 Generate jwt secret:
 ```bash

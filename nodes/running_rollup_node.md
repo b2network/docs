@@ -37,6 +37,7 @@ docker run \
   mainnet-fullnode-snapshot /data
 ```
 
+**The snapshot file will be updated every Friday. The download will be temporarily unavailable. Please wait a while and try again.**
 ## Setup B2 Node
 Generate jwt secret:
 ```bash
