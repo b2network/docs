@@ -2,6 +2,7 @@
 
 - [B² Network](README.md)
 	- [Overview](main/overview.md)
+- [B² Network: Put Bitcoin in Every AI’s Wallet](main/B2_Network_Put_Bitcoin_in_Every_AI’s_Wallet.md)
 - [Airdrop Guide](users/airdrop_guide.md)
 - [Zero-Knowledge Proof Verification Commitment for ZK-Rollup on Bitcoin](main/zpvc.md)
 - [A Decentralized Signal-Driven Network for Modular and Agentic Artificial Intelligence](main/B2_DSN_AI.md)
