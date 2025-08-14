@@ -1485,7 +1485,7 @@ The state machine of PoSg is based on KV-Store + prefix tree, with each prefix c
 
       type DelegationEntry struct {
           Validator   addr
-          Percent     uint16    // 千分比，支持多委托
+          Percent     uint16    // thousandths, supports multiple entrustments.
       }
     ```
 
