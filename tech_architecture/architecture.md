@@ -1,4 +1,4 @@
-# Architecutre
+# Architecture
 
 The technical architecture of B² Network is shown in Figure [B² Network Architecture](https://ipfs.io/ipfs/QmNavFvPfkxeW5nti9WbGw2eCpZksfhzwgomuc7DK9eQjy). Comprising two fundamental layers, Rollup Layer and Data Availability Layer, B² Network seeks to redefine the way we perceive Bitcoin Layer-2 solutions.
 
