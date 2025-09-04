@@ -1,6 +1,6 @@
 # B² Network
 
-## Vision
+## Overview
 
 **Put Bitcoin in Every AI’s Wallet**
 
@@ -13,52 +13,46 @@ We believe that:
 
 By uniting these three forces, B² Network transforms Bitcoin from a passive store of value into an **active medium of exchange for the AI economy**.
 
----
+## Summary
 
-## Core Architecture
-B² Network is built around **five tightly integrated modules**, each addressing a critical piece of the Bitcoin + AI puzzle:
-
-1. **Mining² (DeFAI-Mining Router)**
-
-   A next-generation Bitcoin mining pool that leverages AI to automatically generate new yield strategies.
-
-2. **B² Hub (Layer 1.5 PoSg Consensus)**
-
-   A sovereign chain running Proof-of-Signal + Stake consensus, with application sharding and anchoring into Bitcoin for global security.
-
-3. **B² Rollup (BTC-Anchored Execution Layer)**
-
-   An EVM-compatible rollup that settles in BTC, posts proofs to Bitcoin, and enables dApps with BTC-native gas and trustless security.
-
-4. **DSN-AI (Signal-Driven Agentic AI Layer)**
-
-   A protocol where AI agents emit verifiable signals (Sense → Plan → Decide → Act → Learn) that shape consensus and economic flows.
-
-5. **U2 Stablecoin (BTC-Collateralized Settlement Layer)**
-
-   A Bitcoin-backed stablecoin designed for micro-payments and predictable pricing, serving as the unit of account for agents and DeFi.
-
----
-
-## The Closed Loop
-
-The modules form a **closed economic and technical loop**:
-BTC → Mining² → B² Hub (PoSg) → B² Rollup → DSN-AI Signals → U2 Stablecoin → AI Agents → back to BTC.
-
-This loop ensures:
-- Bitcoin provides **security and reserve value**.
-- AI Agents provide **signals and demand**.
-- U2 provides **stability and usability**.
-- The Hub + Rollup provide **execution and finality**.
-
----
-
-## Why It Matters
-- **For BTC holders**: Unlock liquidity via U2 without losing BTC exposure.
-- **For AI agents**: Transact natively in BTC and U2 for micro-settlements.
-- **For miners**: Monetize hashrate and future block rewards through stablecoin issuance.
-- **For developers**: Deploy AI-native dApps and DeFi protocols with Bitcoin settlement.
-
----
-
-**B² Network redefines Bitcoin’s role — from a passive store of value into the active settlement layer of the AI-driven economy.**
+- [B² Network](README.md)
+	- [Vision: Put Bitcoin in Every AI’s Wallet](main/vision.md)
+	- [Why Bitcoin + AI + Stablecoin](main/why_bitcoin_ai_stablecoin.md)
+	- [Core Modules Overview](main/modules.md)
+- [B² Network: Put Bitcoin in Every AI’s Wallet](main/B2_Network_Put_Bitcoin_in_Every_AIs_Wallet.md)
+- [Core Architecture](tech_architecture/core_architecture.md)
+	- [Mining² (DeFAI-Mining Router)](tech_architecture/mining_squared.md)
+	- [B² Hub (Layer 1.5 PoSg Consensus)](tech_architecture/b2_hub.md)
+	- [B² Rollup (Bitcoin Layer2)](tech_architecture/B2_DSN_AI.md)
+	- [DSN-AI (Signal-Driven Agentic AI Layer)](tech_architecture/B2_DSN_AI.md)
+	- [U2 Stablecoin (BTC-Collateralized Settlement Layer)](tech_architecture/u2.md)
+- Technical Design
+	- [Zero-Knowledge Proof Verification Commitment for ZK-Rollup on Bitcoin](tech_architecture/zpvc.md)
+	- [A Decentralized Signal-Driven Network for Modular and Agentic Artificial Intelligence](tech_architecture/B2_DSN_AI.md)
+	- [Rollup Layer](tech_architecture/rollup_layer.md)
+	- [DA Layer](tech_architecture/da_layer.md)
+	    - [Decentralized Storage](tech_architecture/decentralized_storage.md)
+	    - [B² Nodes](tech_architecture/b2_nodes.md)
+	    - [B² Inscription](tech_architecture/b2_inscription.md)
+	    - [B² Commitment](tech_architecture/b2_commitment.md)
+	    - [Bitcoin Network](tech_architecture/bitcoin.md)
+- For Users
+	- [Connecting to B² Mainnet](users/connect.md)
+	- [Set Gas Price](users/set_gas_price.md)
+	- [Join B² Network Discovery](users/join_discovery.md)
+	- [Bridge to B² Mainnet](users/bridge.md)
+	- [Transfer BlockHeadz NFT](users/transfer_blockheadz.md)
+	- [Add B2 token on BNB Chain](users/add_b2_bnbchain.md)
+- For Developers
+	- [Basic information](developers/basic_information.md)
+ 	- [Write a contract](developers/write_contract.md)
+	- [Deploy a contract with Hardhat](developers/deploy_with_hardhat.md)
+	- [Verify contract code with Hardhat in Explorer](developers/how_to_verify_contract_l2scan.md)
+	- [Verify contract code with Hardhat in Blockscout](developers/how_to_verify_contract_blockscout.md)
+ 	- [Integrate Particle Account Abstraction](developers/account_abstraction_with_particle_network.md)
+ 	- [Integrate Oracle Services](developers/oracle_service.md)
+ 	- [Deploy a rollup node](nodes/running_rollup_node.md)
+ 	- [Deploy a rollup archive node](nodes/running_rollup_archive_node.md)
+ 	- [Deploy a node from scratch(snap sync)](nodes/deploy_a_node_from_scratch.md)
+- [Tokenomics](main/B2_Tokenomics.md)
+- [Press-Kit](main/press-kit.md)
