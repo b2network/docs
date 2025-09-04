@@ -627,7 +627,7 @@ The consensus layer is defined by the formula
 
 $$
 \text{VotingPower}_v \;=\; \alpha \cdot \text{Stake}_v \;+\; \beta \cdot \text{SignalScore}_v
-$$,
+$$
 
 which combines staking and signals into voting power. The parameters $\alpha$ and $\beta$ are determined by on-chain governance (default 0.7 / 0.3). Therefore:
 

@@ -69,3 +69,5 @@ This design unifies:
 
 Mining² is the **entry point of BTC value into the AI economy**, powering the vision:
 **“Every AI Agent holds Bitcoin.”**
+
+View more about [Mining²](https://docs.bsquared.network/b2_network_put_bitcoin_in_every_ais_wallet#signal-signalscore)

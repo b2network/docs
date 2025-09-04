@@ -4,7 +4,7 @@
 	- [Vision: Put Bitcoin in Every AI’s Wallet](main/vision.md)
 	- [Why Bitcoin + AI + Stablecoin](main/why_bitcoin_ai_stablecoin.md)
 	- [Core Modules Overview](main/modules.md)
-- [B² Network: Put Bitcoin in Every AI’s Wallet](main/B2_Network_Put_Bitcoin_in_Every_AI’s_Wallet.md)
+- [B² Network: Put Bitcoin in Every AI’s Wallet](main/B2_Network_Put_Bitcoin_in_Every_AIs_Wallet.md)
 - [Core Architecture](tech_architecture/core_architecture.md)
 	- [Mining² (DeFAI-Mining Router)](tech_architecture/mining_squared.md)
 	- [B² Hub (Layer 1.5 PoSg Consensus)](tech_architecture/b2_hub.md)
