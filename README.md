@@ -1,7 +1,9 @@
 # B² Network
 
 ## Vision
+
 **Put Bitcoin in Every AI’s Wallet**
+
 B² Network is building the settlement backbone for the AI era — where Bitcoin is no longer just “digital gold,” but the **currency of autonomous agents**.
 
 We believe that:
