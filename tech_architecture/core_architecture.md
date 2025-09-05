@@ -33,7 +33,7 @@ The architecture is built around **five tightly connected modules**, each solvin
    - Used by agents for task payments, settlements, and long-term contracts.
    - Serves as the stable economic medium for the AI-driven ecosystem.
 
-![B² Network Architecture](https://github.com/user-attachments/assets/5fa4e86f-9837-41db-a383-307d50d4ea42)
+![B² Network Architecture](https://github.com/user-attachments/assets/43babba0-f08c-4621-a16e-e1efb30218d7)
 
 ---
 
