@@ -13,6 +13,8 @@ We believe that:
 
 By uniting these three forces, B² Network transforms Bitcoin from a passive store of value into an **active medium of exchange for the AI economy**.
 
+![B² Network Architecture](https://github.com/user-attachments/assets/43babba0-f08c-4621-a16e-e1efb30218d7)
+
 ## Summary
 
 - [B² Network](README.md)
