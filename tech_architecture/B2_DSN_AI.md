@@ -6,9 +6,9 @@
 
 In the current rapid evolution of generative AI, **Agentic AI** is becoming a key paradigm for automating complex tasks and human-machine collaboration with its closed-loop mechanism of "autonomous perception - planning - decision-making - execution - learning." However, existing frameworks mostly encapsulate various functional modules within a single runtime or platform, leading to a high degree of coupling in data formats, communication protocols, and permission models. Once there is a need to cross frameworks like LangChain, AutoGen, CrewAI, or to collaborate between cloud services, local processes, and blockchain contracts, developers must rewrite adaptation layers and maintain multiple sets of state synchronization logic, severely restricting the composability, maintainability, and secure and trustworthy interaction of agents.
 
-To break this bottleneck, **B² Network** proposes the **Decentralized Signal-Driven Network for Modular and Agentic Artificial Intelligence (DSN-AI)**, leveraging its Bitcoin-secured Rollup infrastructure. DSN-AI abstracts a type of on-chain Signal: each Signal carries a type, Schema hash, payload, timestamp, and signature, which can be written with high throughput on the B² Rollup and anchored to Bitcoin via the B² Hub, achieving global consistency, immutability, and verifiability. Signals become the sole contract between heterogeneous Agents: any cloud, private, or edge Agent can be dynamically discovered by simply publishing a "capability Signal," and collaboration can be triggered by sending new Signals. User goals are transformed by the LLM planner into an event-directed graph managed by LangGraph; the embedded sparse MoE Dispatcher dynamically selects the optimal expert chain for each Signal, enabling fine-grained, on-demand specialized reasoning without touching downstream modules.
+To break this bottleneck, **B² Network** proposes the **Decentralized Signal-Driven Network for Modular and Agentic Artificial Intelligence (AI Signal)**, leveraging its Bitcoin-secured Rollup infrastructure. AI Signal abstracts a type of on-chain Signal: each Signal carries a type, Schema hash, payload, timestamp, and signature, which can be written with high throughput on the B² Rollup and anchored to Bitcoin via the B² Hub, achieving global consistency, immutability, and verifiability. Signals become the sole contract between heterogeneous Agents: any cloud, private, or edge Agent can be dynamically discovered by simply publishing a "capability Signal," and collaboration can be triggered by sending new Signals. User goals are transformed by the LLM planner into an event-directed graph managed by LangGraph; the embedded sparse MoE Dispatcher dynamically selects the optimal expert chain for each Signal, enabling fine-grained, on-demand specialized reasoning without touching downstream modules.
 
-Based on "Signal + LangGraph + LangChain tools + Mixtral-MoE," the DSN-AI not only provides a unified, verifiable, and asynchronous communication protocol but also brings true modularity and hot-swappable capabilities to agent-based artificial intelligence, laying the foundation for a more open, secure, and intelligent multi-agent ecosystem.
+Based on "Signal + LangGraph + LangChain tools + Mixtral-MoE," the AI Signal not only provides a unified, verifiable, and asynchronous communication protocol but also brings true modularity and hot-swappable capabilities to agent-based artificial intelligence, laying the foundation for a more open, secure, and intelligent multi-agent ecosystem.
 
 # Introduction
 
@@ -31,7 +31,7 @@ However, when researchers and developers attempt to push Agentic AI towards prod
    As task complexity continues to increase, the existing single LLM or fixed processes struggle to meet the dual demands of real-time performance and professional depth. There is an urgent need to seamlessly integrate more expert models, private APIs, or edge devices, but traditional centralized coordination methods cannot support the high-frequency asynchronous event flow.
 
 
-**B² Network**, anchored to the Bitcoin mainnet and aimed at composable finance and computing, inherently possesses advantages of high security, global accessibility, and scalable data availability layers. Therefore, we propose the **Decentralized Signal-Driven Network for Modular and Agentic Artificial Intelligence (DSN-AI)**, which elevates on-chain "events" to **Signals** with signatures, schemas, and timestamps, thereby constructing a unified, verifiable, and asynchronous agent communication bus. Specifically:
+**B² Network**, anchored to the Bitcoin mainnet and aimed at composable finance and computing, inherently possesses advantages of high security, global accessibility, and scalable data availability layers. Therefore, we propose the **Decentralized Signal-Driven Network for Modular and Agentic Artificial Intelligence (AI Signal)**, which elevates on-chain "events" to **Signals** with signatures, schemas, and timestamps, thereby constructing a unified, verifiable, and asynchronous agent communication bus. Specifically:
 
 * **Decentralized Trustworthy Timeline**: All Signals are first written to the B² Rollup and submitted to Bitcoin via the B² Hub, combining the irreversible UTXO ledger to provide globally synchronized causal order and tamper-proof auditing.
 
@@ -39,17 +39,17 @@ However, when researchers and developers attempt to push Agentic AI towards prod
 
 * **Intelligent Routing and Load Balancing**: Based on the LangGraph event graph and sparse MoE Dispatcher, the LLM planner can select the best expert model on demand and decompose tasks into parallel executable Signal DAGs, thereby enhancing system throughput and intelligence while ensuring consistency.
 
-DSN-AI aims to provide a "low-coupling, high-trust, easy-evolution" foundational communication layer for Agentic AI, allowing developers to focus on business logic and model innovation without repeatedly addressing cross-framework interoperability and security auditing issues.
+AI Signal aims to provide a "low-coupling, high-trust, easy-evolution" foundational communication layer for Agentic AI, allowing developers to focus on business logic and model innovation without repeatedly addressing cross-framework interoperability and security auditing issues.
 
 ## Mission and Vision
 
 * **Mission**
 
-   The core mission of DSN-AI is to enable developers, enterprises, and individual users around the world to build, deploy, and interconnect AI Agents with unprecedented security, interoperability, and composability through a decentralized, verifiable Signal protocol. We are committed to: 1) providing traceable and tamper-proof execution logs for all Agent actions anchored at Bitcoin-level security; 2) replacing fragmented API adaptation layers with a minimal, unified Signal contract to lower the collaboration threshold across frameworks; 3) unleashing the parallel and real-time response potential of Agents through an asynchronous event-driven model, allowing them to operate safely in high-risk scenarios such as finance, industry, research, and public services; 4) building an open community and economic incentives to encourage more expert models and tools to be packaged as subscribable capability Signals, forming a positive feedback loop.
+   The core mission of AI Signal is to enable developers, enterprises, and individual users around the world to build, deploy, and interconnect AI Agents with unprecedented security, interoperability, and composability through a decentralized, verifiable Signal protocol. We are committed to: 1) providing traceable and tamper-proof execution logs for all Agent actions anchored at Bitcoin-level security; 2) replacing fragmented API adaptation layers with a minimal, unified Signal contract to lower the collaboration threshold across frameworks; 3) unleashing the parallel and real-time response potential of Agents through an asynchronous event-driven model, allowing them to operate safely in high-risk scenarios such as finance, industry, research, and public services; 4) building an open community and economic incentives to encourage more expert models and tools to be packaged as subscribable capability Signals, forming a positive feedback loop.
 
 * **Vision**
 
-   The future we envision is a decentralized intelligent grid composed of countless professional Agents: robots can subscribe to maintenance signals in real-time on factory floors, financial algorithms share market insights on-chain, personal assistants execute home commands securely in local private domains, and all information flows freely, auditable, and composable through the DSN-AI Signal bus. At that time, developers will no longer be limited to specific cloud platforms, model researchers can seamlessly inject the latest MoE experts into global task flows, and end users will gain data control focused on privacy and sovereignty. We believe that DSN-AI will become the next generation "public communication layer" connecting humans and machine intelligence, laying a trustworthy, open, and shared foundation for autonomous AI ecosystems, just as the internet did for information and Bitcoin did for value.
+   The future we envision is a decentralized intelligent grid composed of countless professional Agents: robots can subscribe to maintenance signals in real-time on factory floors, financial algorithms share market insights on-chain, personal assistants execute home commands securely in local private domains, and all information flows freely, auditable, and composable through the AI Signal Signal bus. At that time, developers will no longer be limited to specific cloud platforms, model researchers can seamlessly inject the latest MoE experts into global task flows, and end users will gain data control focused on privacy and sovereignty. We believe that AI Signal will become the next generation "public communication layer" connecting humans and machine intelligence, laying a trustworthy, open, and shared foundation for autonomous AI ecosystems, just as the internet did for information and Bitcoin did for value.
 
 # Signal Network Model
 
@@ -57,7 +57,7 @@ DSN-AI aims to provide a "low-coupling, high-trust, easy-evolution" foundational
 
 * Definition
 
-   **Signal** is the core primitive of DSN-AI: a Signal consists of fields such as "type code + schema hash + payload + timestamp + signature," and is recorded on the B² Rollup, ultimately anchored to Bitcoin L1, thus possessing global consistency, immutability, and verifiability. It serves as both a **communication contract**—any heterogeneous agent in cloud, private servers, or local devices can complete service discovery and event routing simply by publishing a "capability Signal"; and as an **identity and audit credential**, providing execution traceability and causal ordering through ECDSA signatures and an on-chain timeline. For data streams or decision results with economic value, a Signal can also upgrade to a **paid Signal**: the publisher embeds payment conditions and encrypted key indexes in the payload, and subscribers must first complete on-chain micropayments or zero-knowledge commitments to unlock the symmetric key and read the encrypted payload, achieving cryptographic secure paid subscriptions. This allows modules for perception, planning, decision-making, execution, and learning to be freely combined in a hot-swappable manner across frameworks and platforms, while also giving rise to a new data/model-as-a-service economy.
+   **Signal** is the core primitive of AI Signal: a Signal consists of fields such as "type code + schema hash + payload + timestamp + signature," and is recorded on the B² Rollup, ultimately anchored to Bitcoin L1, thus possessing global consistency, immutability, and verifiability. It serves as both a **communication contract**—any heterogeneous agent in cloud, private servers, or local devices can complete service discovery and event routing simply by publishing a "capability Signal"; and as an **identity and audit credential**, providing execution traceability and causal ordering through ECDSA signatures and an on-chain timeline. For data streams or decision results with economic value, a Signal can also upgrade to a **paid Signal**: the publisher embeds payment conditions and encrypted key indexes in the payload, and subscribers must first complete on-chain micropayments or zero-knowledge commitments to unlock the symmetric key and read the encrypted payload, achieving cryptographic secure paid subscriptions. This allows modules for perception, planning, decision-making, execution, and learning to be freely combined in a hot-swappable manner across frameworks and platforms, while also giving rise to a new data/model-as-a-service economy.
 
 * Data Structure
 
@@ -375,7 +375,7 @@ This data structure ensures the interoperability and security of signal interact
 
       * Privacy layering: Public fields are left for regulatory audits, while sensitive business data is hidden through encryption/ZKP; achieving compliance while maintaining privacy.
 
-Multi-signatures and on-chain timestamps jointly ensure identity authentication and event authenticity; Merkle proofs combined with Bitcoin PoW anchor completely block tampering; nonce + timestamp dual sequence mechanism resists replay; gas fees and staking economics incentivize the suppression of spam and DoS behavior; AES-GCM confidential encapsulation, Proxy Re-Encryption dynamic key transfer, and ZK payment/execution proofs provide end-to-end privacy protection for sensitive data. The above mechanisms build a layered security foundation for DSN-AI that is "verifiable, trustworthy, and regulatory compliant."
+Multi-signatures and on-chain timestamps jointly ensure identity authentication and event authenticity; Merkle proofs combined with Bitcoin PoW anchor completely block tampering; nonce + timestamp dual sequence mechanism resists replay; gas fees and staking economics incentivize the suppression of spam and DoS behavior; AES-GCM confidential encapsulation, Proxy Re-Encryption dynamic key transfer, and ZK payment/execution proofs provide end-to-end privacy protection for sensitive data. The above mechanisms build a layered security foundation for AI Signal that is "verifiable, trustworthy, and regulatory compliant."
 
 # Signal-Driven Agentic AI Introduction and Architecture
 
@@ -459,7 +459,7 @@ Multi-signatures and on-chain timestamps jointly ensure identity authentication 
 
 ## Role Hierarchy (Perception, Planning, Decision-Making, Execution, Learning)
 
-   In the DSN-AI system, role hierarchy is not a hard-coded process, but a set of loosely coupled autonomous functional domains through Signal agreements. Each layer can be undertaken by one or more heterogeneous agents, achieving "horizontal scalability and vertical replaceability." Below, the responsibilities, inputs and outputs, typical implementations, and performance highlights are elaborated across five layers.
+   In the AI Signal system, role hierarchy is not a hard-coded process, but a set of loosely coupled autonomous functional domains through Signal agreements. Each layer can be undertaken by one or more heterogeneous agents, achieving "horizontal scalability and vertical replaceability." Below, the responsibilities, inputs and outputs, typical implementations, and performance highlights are elaborated across five layers.
 
 ### Perception Layer
 
@@ -575,11 +575,11 @@ This sequence demonstrates a complete closed loop from external events to execut
 
 4. Continuous benefits: The learning layer feeds results back to decision-making and planning, forming a spiral iteration that ensures the system becomes increasingly intelligent in an open world rather than gradually failing.
 
-With this role-layered design, DSN-AI can achieve efficient collaboration across different business domains and trust boundaries, laying a solid framework for the future AI ecosystem that is open, multi-domain, and multi-agent.
+With this role-layered design, AI Signal can achieve efficient collaboration across different business domains and trust boundaries, laying a solid framework for the future AI ecosystem that is open, multi-domain, and multi-agent.
 
 ## Task Flow and Signal Linking
 
-In DSN-AI, "Task Flow" refers to the entire process sequence from user or system goals, through planning, decision-making, execution, to result feedback; "Signal Linking" uses on-chain events to break this sequence into several discrete, verifiable, and parallel stages, thereby constructing a workflow graph (Task Graph) that is both observable and composable. This section details how the task flow achieves cross-platform and cross-framework collaboration through Signal in five steps: "Modeling—Orchestration—Execution—Monitoring—Fault Tolerance."
+In AI Signal, "Task Flow" refers to the entire process sequence from user or system goals, through planning, decision-making, execution, to result feedback; "Signal Linking" uses on-chain events to break this sequence into several discrete, verifiable, and parallel stages, thereby constructing a workflow graph (Task Graph) that is both observable and composable. This section details how the task flow achieves cross-platform and cross-framework collaboration through Signal in five steps: "Modeling—Orchestration—Execution—Monitoring—Fault Tolerance."
 
 ### Task Flow Modeling: From Natural Language to Signal DAG
 
@@ -711,17 +711,17 @@ In the above sequence, the three steps of flash loan - exchange - repayment are 
 
    In the future, the root node of the DAG can be submitted to a DAO proposal contract, and after community multi-signature merging, workflows can be released to achieve large-scale collaboration and auditing across organizations.
 
-By breaking down task flows into standard Signal chains, DSN-AI transforms large complex tasks into verifiable, parallelizable, and economically incentivized event micro-units; then, through the dynamic orchestration of Planner-Router-Dispatcher, it forms a self-healing, evolvable AI workflow network. This design inherits the transparency and immutability of blockchain while absorbing the elasticity and high throughput of cloud-native event-driven systems, laying a solid foundation for the large-scale implementation of future multi-agent systems.
+By breaking down task flows into standard Signal chains, AI Signal transforms large complex tasks into verifiable, parallelizable, and economically incentivized event micro-units; then, through the dynamic orchestration of Planner-Router-Dispatcher, it forms a self-healing, evolvable AI workflow network. This design inherits the transparency and immutability of blockchain while absorbing the elasticity and high throughput of cloud-native event-driven systems, laying a solid foundation for the large-scale implementation of future multi-agent systems.
 
 ## Cross-Platform Collaboration Model
 
-Cross-platform collaboration is a necessary condition for the implementation of Agentic AI: perception sources are dispersed across the Internet of Things and Web2 APIs, computational power and model hosting are in multi-cloud environments, key states are stored on the blockchain, while some privacy logic must be executed locally or in private data centers. DSN-AI enables seamless collaboration of these heterogeneous resources through a unified Signal protocol.
+Cross-platform collaboration is a necessary condition for the implementation of Agentic AI: perception sources are dispersed across the Internet of Things and Web2 APIs, computational power and model hosting are in multi-cloud environments, key states are stored on the blockchain, while some privacy logic must be executed locally or in private data centers. AI Signal enables seamless collaboration of these heterogeneous resources through a unified Signal protocol.
 
 ### Collaboration Models
 
 1. Cloud-to-Cloud
 
-   Agents in multiple public or private clouds exchange events via the DSN-AI Signal bus. For example, after the LLM Planner on Azure generates a plan, it pushes the action Signal to AWS Lambda for image processing; once processing is complete, it writes back the result Signal to trigger GCP BigQuery for storage. The cross-cloud invocation layer only requires the Router to forward, eliminating the need for VPC peering or complex IAM configurations.
+   Agents in multiple public or private clouds exchange events via the AI Signal Signal bus. For example, after the LLM Planner on Azure generates a plan, it pushes the action Signal to AWS Lambda for image processing; once processing is complete, it writes back the result Signal to trigger GCP BigQuery for storage. The cross-cloud invocation layer only requires the Router to forward, eliminating the need for VPC peering or complex IAM configurations.
 
 2. Cloud-to-Chain
 
@@ -729,7 +729,7 @@ Cross-platform collaboration is a necessary condition for the implementation of 
 
 3. Chain-to-Chain
 
-   State updates are transmitted between different blockchains, avoiding multiple sets of cross-chain bridging logic. For instance, user actions on the BNB Chain are transmitted via Signal to execution agents on the B² Rollup, which are authorized by the Signal to complete orders in the Bitcoin NFT protocol. The DSN-AI Router connects lightweight clients of both chains, adding an extra signature verification layer for cross-chain security.
+   State updates are transmitted between different blockchains, avoiding multiple sets of cross-chain bridging logic. For instance, user actions on the BNB Chain are transmitted via Signal to execution agents on the B² Rollup, which are authorized by the Signal to complete orders in the Bitcoin NFT protocol. The AI Signal Router connects lightweight clients of both chains, adding an extra signature verification layer for cross-chain security.
 
 4. Cloud-to-Edge
 
@@ -743,24 +743,24 @@ Cross-platform collaboration is a necessary condition for the implementation of 
 
    Small LLMs or tools running on personal computers or mobile phones can monitor changes in personal privacy directories (such as new screenshots) to generate Signals for upload. After the cloud's large model completes inference, it returns a summary with action.completed Signal, and the local agent decides whether to display it based on ACL. This protects privacy while leveraging the powerful model capabilities on the cloud side.
 
-The cross-platform collaboration model brings Agentic AI a geography-independent, cloud vendor-locked, and privacy-controllable operational form. The Signal layer of DSN-AI ensures security and verifiability while abstracting complex networks and permission management into declarable, routable, and economically
+The cross-platform collaboration model brings Agentic AI a geography-independent, cloud vendor-locked, and privacy-controllable operational form. The Signal layer of AI Signal ensures security and verifiability while abstracting complex networks and permission management into declarable, routable, and economically
 
 # Technical Implementation Framework
 
-## LangGraph: Event Graph Orchestration - The "Workflow Engine" of DSN-AI
+## LangGraph: Event Graph Orchestration - The "Workflow Engine" of AI Signal
 
-LangGraph is a low-level workflow runtime open-sourced by the LangChain team at the end of 2024. It replaces the traditional Chain serial method with a "node-event-edge" triadic paradigm, inherently supporting asynchronous event-driven processes, parallel branches, failure rollbacks, and persistent checkpoints, making it particularly suitable as the Signal-to-Signal orchestration engine for DSN-AI. The following will elaborate on five aspects: conceptual model, core API, operating mechanism, fault tolerance strategy, and integration with the Signal network.
+LangGraph is a low-level workflow runtime open-sourced by the LangChain team at the end of 2024. It replaces the traditional Chain serial method with a "node-event-edge" triadic paradigm, inherently supporting asynchronous event-driven processes, parallel branches, failure rollbacks, and persistent checkpoints, making it particularly suitable as the Signal-to-Signal orchestration engine for AI Signal. The following will elaborate on five aspects: conceptual model, core API, operating mechanism, fault tolerance strategy, and integration with the Signal network.
 
 1. Conceptual Model
 
-   | Component | Corresponding Meaning | Mapped in DSN-AI |
+   | Component | Corresponding Meaning | Mapped in AI Signal |
    | :---- | :---- | :---- |
    | EventNode | Atomic computing unit that can be triggered by events | Various nodes such as perception, judgment, action, compensation, etc. |
    | Edge | Directed Dependency (Condition / Order) | sensor.update -> judge.condition_met |
    | GraphState | Global Key-Value State Table | Saves DAG node execution status and retry count |
    | Router | Select branch based on event content | MoE Dispatcher acts as a dynamic Router |
 
-   Nodes can declare Input Schema and Output Schema, and LangGraph performs type checking at runtime; this perfectly aligns with the schema_hash of DSN-AI.
+   Nodes can declare Input Schema and Output Schema, and LangGraph performs type checking at runtime; this perfectly aligns with the schema_hash of AI Signal.
 
 2. Core API
 
@@ -812,7 +812,7 @@ LangGraph is a low-level workflow runtime open-sourced by the LangChain team at 
 
    1) Event-driven
 
-      Each node implements __call__(state), and the LangGraph engine listens to the input queue (in DSN-AI, this is the Signal Bus). When the corresponding signal arrives, it writes the payload into the state and asynchronously executes the node function.
+      Each node implements __call__(state), and the LangGraph engine listens to the input queue (in AI Signal, this is the Signal Bus). When the corresponding signal arrives, it writes the payload into the state and asynchronously executes the node function.
 
    2) State snapshot
 
@@ -824,7 +824,7 @@ LangGraph is a low-level workflow runtime open-sourced by the LangChain team at 
 
 4. Fault tolerance and retry
 
-   | Scene | LangGraph Mechanism | DSN-AI Integration |
+   | Scene | LangGraph Mechanism | AI Signal Integration |
    | :---- | :---- | :---- |
    | Node Exception | Automatically capture exceptions and write to state["_error"] | Publish action.failed signal; Router can retry after reading |
    | Timeout | @graph.node(timeout=30) declaration | Send action.timeout after timeout, Planner decides to degrade |
@@ -846,7 +846,7 @@ LangGraph is a low-level workflow runtime open-sourced by the LangChain team at 
 
    * Strong Typing + Persistence: Node I/O is validated through schema checks, maintaining consistency with schema_hash; GraphState snapshots allow tasks to be recoverable in large-scale distributed environments.
 
-   * Naturally Parallel: The combination of dependency edges and event-driven architecture allows throughput to scale linearly with the number of nodes, accommodating DSN-AI's demand for tens of thousands of parallel Signals.
+   * Naturally Parallel: The combination of dependency edges and event-driven architecture allows throughput to scale linearly with the number of nodes, accommodating AI Signal's demand for tens of thousands of parallel Signals.
 
    * Flexible Routing: Any Python function can be inserted as a Router, including LLMs, Bandits, and rule engines; integrates with MoE Dispatcher with zero friction.
 
@@ -854,11 +854,11 @@ LangGraph is a low-level workflow runtime open-sourced by the LangChain team at 
 
    * Easy Governance: FlowDefinition can be hashed and stored on-chain, signed and deployed after team review, meeting compliance audit objectives.
 
-By building with LangGraph, DSN-AI has gained highly declarative event graph orchestration capabilities; it abstracts business logic into a renderable, verifiable, and governable DAG, making cross-platform and cross-framework agent collaboration simple, intuitive, and secure.
+By building with LangGraph, AI Signal has gained highly declarative event graph orchestration capabilities; it abstracts business logic into a renderable, verifiable, and governable DAG, making cross-platform and cross-framework agent collaboration simple, intuitive, and secure.
 
-## LangChain Tools: Tool Encapsulation and Invocation - The "Instruction Execution Layer" of DSN-AI
+## LangChain Tools: Tool Encapsulation and Invocation - The "Instruction Execution Layer" of AI Signal
 
-In the technology stack of DSN-AI, LangChain Tools play the role of "capability glue": it wraps external APIs, database queries, on-chain transactions, shell scripts, and even local Python functions into a unified form of Tool, available for invocation by LLM Planner, MoE Router, or execution Agents. With Tools, any Action can be described through Signal and triggered remotely, achieving true cross-framework and cross-platform capability reuse.
+In the technology stack of AI Signal, LangChain Tools play the role of "capability glue": it wraps external APIs, database queries, on-chain transactions, shell scripts, and even local Python functions into a unified form of Tool, available for invocation by LLM Planner, MoE Router, or execution Agents. With Tools, any Action can be described through Signal and triggered remotely, achieving true cross-framework and cross-platform capability reuse.
 
 1. Tool Abstract Model
 
@@ -943,7 +943,7 @@ In the technology stack of DSN-AI, LangChain Tools play the role of "capability 
    | :---- | :---- |
    | Parameter Injection | Pydantic Schema Automatic Strong Type Validation; Custom Rules for Validators |
    | Resource Abuse | Unified rate limiting for timeout, retries, and rate_limit attributes; write action.failed(code=429) when exceeding budget. |
-   | Sensitive API Key Leak | Place credentials in local environment variables or DSN-AI private domain Secret; do not enter Signal |
+   | Sensitive API Key Leak | Place credentials in local environment variables or AI Signal private domain Secret; do not enter Signal |
    | Arbitrary Code Execution | SysTool runs by default on Docker / gVisor; must explicitly set allow_shell=True to allow |
 
 6. Deep Mapping of Tool and Signal
@@ -986,13 +986,13 @@ In the technology stack of DSN-AI, LangChain Tools play the role of "capability 
 
    The Planner generates action.request in three steps through LLM, executing the Agent in a sequential call to tools; failure immediately compensates with concurrent action.failed Signal. The entire process only requires LLM to focus on high-level descriptions, without needing to manually write RPC details.
 
-LangChain Tools provide DSN-AI with a unified capability encapsulation that is "orchestration-agnostic, framework-agnostic, and verifiable by signature." Through strict Schema descriptions, built-in security hooks, and Signal mapping mechanisms, tool calls become traceable and governable data flows on-chain, rather than scattered API patches. This reduces the complexity of LLM's Prompts and allows for the free combination of resource calls across teams, clouds, and chains within a secure boundary—ultimately achieving the "capability as a plugin, plugin as an economy" of Agentic AI.
+LangChain Tools provide AI Signal with a unified capability encapsulation that is "orchestration-agnostic, framework-agnostic, and verifiable by signature." Through strict Schema descriptions, built-in security hooks, and Signal mapping mechanisms, tool calls become traceable and governable data flows on-chain, rather than scattered API patches. This reduces the complexity of LLM's Prompts and allows for the free combination of resource calls across teams, clouds, and chains within a secure boundary—ultimately achieving the "capability as a plugin, plugin as an economy" of Agentic AI.
 
-## MoE Dispatcher: Expert Routing and Strategy Allocation—The "Brain" of DSN-AI
+## MoE Dispatcher: Expert Routing and Strategy Allocation—The "Brain" of AI Signal
 
 The Mixture-of-Experts (MoE) mechanism allows a router to activate only a small number of "expert" subnetworks during inference, thereby enhancing model capacity and domain specialization without increasing computational costs.
 
-In DSN-AI, the MoE Dispatcher is positioned at the intersection of "planning -> decision-making," responsible for selecting the most suitable expert chain (LLM, tool sequence, or external Agent) for each sub-task based on the context of the Signal. Its core objectives are:
+In AI Signal, the MoE Dispatcher is positioned at the intersection of "planning -> decision-making," responsible for selecting the most suitable expert chain (LLM, tool sequence, or external Agent) for each sub-task based on the context of the Signal. Its core objectives are:
 
 1. Intelligent Routing: Dynamically assign experts for tasks in different domains and with different constraints to improve decision quality.
 
@@ -1080,7 +1080,7 @@ In DSN-AI, the MoE Dispatcher is positioned at the intersection of "planning -> 
 
 3. Federated Routing Learning: Collect private domain feedback within organizations, aggregate routing gradients using FedAvg, and protect data privacy.
 
-The MoE Dispatcher empowers DSN-AI with precise scheduling capabilities for the expert chain through the combined approach of "sparse activation + dynamic routing + online reinforcement," reducing inference latency while self-optimizing through continuous Signal feedback, ultimately forming a decision neural network that fosters human-machine symbiosis and continuous improvement.
+The MoE Dispatcher empowers AI Signal with precise scheduling capabilities for the expert chain through the combined approach of "sparse activation + dynamic routing + online reinforcement," reducing inference latency while self-optimizing through continuous Signal feedback, ultimately forming a decision neural network that fosters human-machine symbiosis and continuous improvement.
 
 ## Signal: Signal-Driven on the Chain
 
@@ -1214,11 +1214,11 @@ Advantages:
 
 * MoE Dispatcher dynamically adjusts parameters based on expert models for weather/events/holidays.
 
-The above scenarios cover five major fields: finance, healthcare, supply chain, research, and smart cities, fully demonstrating the unique advantages of DSN-AI in cross-platform collaboration, strong security auditing, economic incentives, and privacy protection. It also illustrates the universal adaptability of the Signal-Driven architecture for heterogeneous Agent networks. As the B² Network ecosystem and MoE Dispatcher technology mature, more high-value scenarios will be rapidly implemented in the real world.
+The above scenarios cover five major fields: finance, healthcare, supply chain, research, and smart cities, fully demonstrating the unique advantages of AI Signal in cross-platform collaboration, strong security auditing, economic incentives, and privacy protection. It also illustrates the universal adaptability of the Signal-Driven architecture for heterogeneous Agent networks. As the B² Network ecosystem and MoE Dispatcher technology mature, more high-value scenarios will be rapidly implemented in the real world.
 
 # Roadmap Outlook
 
-In order to transition the Decentralized Signal-Driven Network for Modular and Agentic AI (DSN-AI) from prototype to scalable applications across multiple industries, B² Network has planned the following three major directions for subsequent development based on existing Rollup and Signal protocols, focusing on addressing three core pain points: developer entry, ecological prosperity, and cross-language interoperability.
+In order to transition the Decentralized Signal-Driven Network for Modular and Agentic AI (AI Signal) from prototype to scalable applications across multiple industries, B² Network has planned the following three major directions for subsequent development based on existing Rollup and Signal protocols, focusing on addressing three core pain points: developer entry, ecological prosperity, and cross-language interoperability.
 
 1. Multi-language Signal SDK
 
@@ -1262,7 +1262,7 @@ Allow developers who create Agents using any technology stack and framework to c
 
 # Summary
 
-Decentralized Signal-Driven Network (DSN-AI), using on-chain Signal as a unified communication primitive, provides unprecedented modularity, trustworthiness, and scalability for cross-platform Agentic AI. Its core advantages can be summarized in the following five points:
+Decentralized Signal-Driven Network (AI Signal), using on-chain Signal as a unified communication primitive, provides unprecedented modularity, trustworthiness, and scalability for cross-platform Agentic AI. Its core advantages can be summarized in the following five points:
 
 1. Strong decoupling and true modularity. Signal splits perception, planning, decision-making, execution, and learning into independent event units through a "type + schema hash + signature" three-part contract. Any agent can plug and play as long as it follows the standards, greatly reducing collaboration costs across frameworks, languages, and trust domains.
 
@@ -1284,7 +1284,7 @@ As multi-chain interoperability, privacy computing, and high-performance inferen
 
 * Intelligent leap: MoE dispatchers, RLAIF online learning, and federated routing will drive the continuous proliferation and upgrading of "expert pool" intelligences, providing global users with on-demand, continuously evolving AI services.
 
-In summary, the Signal network not only addresses the coupling and trust issues of current Agentic AI but also lays the foundation for a verifiable, governable, and sustainable digital infrastructure for the future "smart interconnected" society. With the joint participation of the B² Network ecosystem and global developers, DSN-AI is expected to become the next-generation public protocol layer connecting humans and autonomous intelligences, ushering in an open, secure, and intelligent new era.
+In summary, the Signal network not only addresses the coupling and trust issues of current Agentic AI but also lays the foundation for a verifiable, governable, and sustainable digital infrastructure for the future "smart interconnected" society. With the joint participation of the B² Network ecosystem and global developers, AI Signal is expected to become the next-generation public protocol layer connecting humans and autonomous intelligences, ushering in an open, secure, and intelligent new era.
 
 # References
 

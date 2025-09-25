@@ -26,7 +26,7 @@ The core vision of B² Network is to bridge this gap—allowing every AI entity 
 
 4. Building an Open, Composable Modular Ecosystem
 
-    * Modules like Mining Squared, B² Hub, B² Rollup, and DSN-AI are decoupled and pluggable, facilitating integration by different developers as needed at various layers.
+    * Modules like Mining Squared, B² Hub, B² Rollup, and AI Signal are decoupled and pluggable, facilitating integration by different developers as needed at various layers.
 
     * A unified BTC value base lowers the collaboration threshold across applications, stimulating innovation and capital influx.
 

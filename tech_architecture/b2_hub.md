@@ -13,7 +13,7 @@ It is designed to combine the **security of Bitcoin anchoring**, the **scalabili
 
 - **Application Sharding:**
   The Hub introduces multiple shards, such as:
-  - **Signal Shard**: Collects and verifies signals from DSN-AI.
+  - **Signal Shard**: Collects and verifies signals from AI Signal.
   - **Agent Shard**: Executes agent-native contracts and interactions.
   - **Stablecoin Shard**: Handles U2 minting, redemption, and settlements.
   This separation ensures high throughput and modular scalability.

@@ -21,7 +21,7 @@ The architecture is built around **five tightly connected modules**, each solvin
    - Posts merkle roots and proofs to Bitcoin for trustless anchoring.
    - Enables developers to deploy dApps and smart contracts with BTC settlement.
 
-4. **DSN-AI (Signal-Driven Agentic AI Layer)**
+4. **AI Signal (Signal-Driven Agentic AI Layer)**
    The protocol layer that integrates autonomous AI agents directly into blockchain consensus.
    - Agents emit verifiable “signals” representing perception, planning, and actions.
    - Validators use signals to adjust voting power via SignalScore.
@@ -33,7 +33,7 @@ The architecture is built around **five tightly connected modules**, each solvin
    - Used by agents for task payments, settlements, and long-term contracts.
    - Serves as the stable economic medium for the AI-driven ecosystem.
 
-![B² Network Architecture](https://github.com/user-attachments/assets/43babba0-f08c-4621-a16e-e1efb30218d7)
+![B² Network Architecture](../images/architecture.png)
 
 ---
 

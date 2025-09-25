@@ -16,13 +16,13 @@
 
 * Coupling with Other Modules
 
-  Provides BTC staking and fee funds to B² Hub; invests assets into different strategies for yield through B² Rollup; conducts strategy evaluation and selection through DSN-AI, and automates participation in various strategies.
+  Provides BTC staking and fee funds to B² Hub; invests assets into different strategies for yield through B² Rollup; conducts strategy evaluation and selection through AI Signal, and automates participation in various strategies.
 
 ## B² Hub
 
 * Mission and Positioning
 
-  A Layer 1.5 between Bitcoin Layer 1 and Rollup, serving as a consensus and data availability center, providing blockchain infrastructure for DSN-AI.
+  A Layer 1.5 between Bitcoin Layer 1 and Rollup, serving as a consensus and data availability center, providing blockchain infrastructure for AI Signal.
 
 * Key Features
 
@@ -38,7 +38,7 @@
 
   Provides final confirmation and DA for B² Rollup.
 
-  Collects DSN-AI signals to enhance consensus security.
+  Collects AI Signal signals to enhance consensus security.
 
 ## B² Rollup
 
@@ -60,7 +60,7 @@
 
   Provides a scalable execution environment for DeFi, NFTs, RWA, and other applications.
 
-## DSN-AI
+## AI Signal
 
 * Mission and Positioning
 
@@ -106,6 +106,6 @@
 
   Mining Squared: Miners can choose to automatically convert a portion of their earnings into U2 for AI task budgeting or hedging; rBTC collateral can be used to mint U2 with one click, improving capital utilization.
 
-  DSN-AI / A-AA: Agents can set stable budgets in U2 within the A-AA wallet (e.g., "daily 50 U2 model expenses"); during execution, the router converts U2 <-> BTC as needed to pay for Gas, reducing price volatility's impact on workflows.
+  AI Signal / A-AA: Agents can set stable budgets in U2 within the A-AA wallet (e.g., "daily 50 U2 model expenses"); during execution, the router converts U2 <-> BTC as needed to pay for Gas, reducing price volatility's impact on workflows.
 
   B² Rollup Applications: DeFi, payment, and subscription dApps can use U2 as a user-facing pricing currency while enjoying the PoW finality and cross-Shard atomic interoperability of the Hub.

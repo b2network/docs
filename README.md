@@ -13,7 +13,7 @@ We believe that:
 
 By uniting these three forces, B² Network transforms Bitcoin from a passive store of value into an **active medium of exchange for the AI economy**.
 
-![B² Network Architecture](https://github.com/user-attachments/assets/43babba0-f08c-4621-a16e-e1efb30218d7)
+![B² Network Architecture](./images/architecture.png)
 
 ## Summary
 
@@ -26,7 +26,7 @@ By uniting these three forces, B² Network transforms Bitcoin from a passive sto
 	- [Mining² (DeFAI-Mining Router)](tech_architecture/mining_squared.md)
 	- [B² Hub (Layer 1.5 PoSg Consensus)](tech_architecture/b2_hub.md)
 	- [B² Rollup (Bitcoin Layer2)](tech_architecture/B2_DSN_AI.md)
-	- [DSN-AI (Signal-Driven Agentic AI Layer)](tech_architecture/B2_DSN_AI.md)
+	- [AI Signal (Signal-Driven Agentic AI Layer)](tech_architecture/B2_DSN_AI.md)
 	- [U2 Stablecoin (BTC-Collateralized Settlement Layer)](tech_architecture/u2.md)
 - Technical Design
 	- [Zero-Knowledge Proof Verification Commitment for ZK-Rollup on Bitcoin](tech_architecture/zpvc.md)

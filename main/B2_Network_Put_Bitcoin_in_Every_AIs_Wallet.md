@@ -16,7 +16,7 @@ With the rapid expansion of autonomous intelligent agents (AI Agents) in various
 
 3. B² Rollup - A Bitcoin Rollup based on validity proofs, which submits batch data and state roots to the B² Hub and periodically anchors to the Bitcoin mainnet using Taproot, achieving both fast local confirmations and Layer 1 economic security.
 
-4. DSN-AI - An Agentic AI layer driven by Signal, providing Agent-Native Account Abstraction (A-AA), Signal Bus, and model routing, enabling agents to register, delegate validators, send/receive signals, and natively hold assets.
+4. AI Signal - An Agentic AI layer driven by Signal, providing Agent-Native Account Abstraction (A-AA), Signal Bus, and model routing, enabling agents to register, delegate validators, send/receive signals, and natively hold assets.
 
 5. U2 - A new generation of stable settlement and intelligent stablecoins using BTC assets as collateral, aimed at Agentic AI. Using BTC assets as collateral to unlock BTC liquidity; building an AI-driven "adaptive collateral ratio and liquidation" engine to more quickly, reasonably, and safely adapt to market conditions; providing on-chain micropayment channels for Agents, offering a natural settlement layer for AI-to-AI business models, which can be seen as the next generation of "AI-native dollars"; supporting bank card services to unlock more consumption scenarios.
 
@@ -68,7 +68,7 @@ The core vision of B² Network is to bridge this gap—allowing every AI entity 
 
 4. Building an Open, Composable Modular Ecosystem
 
-    * Modules like Mining Squared, B² Hub, B² Rollup, and DSN-AI are decoupled and pluggable, facilitating integration by different developers as needed at various layers.
+    * Modules like Mining Squared, B² Hub, B² Rollup, and AI Signal are decoupled and pluggable, facilitating integration by different developers as needed at various layers.
 
     * A unified BTC value base lowers the collaboration threshold across applications, stimulating innovation and capital influx.
 
@@ -92,13 +92,13 @@ With this vision, B² Network is committed to upgrading Bitcoin from "digital go
 
 * Coupling with Other Modules
 
-  Provides BTC staking and fee funds to B² Hub; invests assets into different strategies for yield through B² Rollup; conducts strategy evaluation and selection through DSN-AI, and automates participation in various strategies.
+  Provides BTC staking and fee funds to B² Hub; invests assets into different strategies for yield through B² Rollup; conducts strategy evaluation and selection through AI Signal, and automates participation in various strategies.
 
 ### B² Hub
 
 * Mission and Positioning
 
-  A Layer 1.5 between Bitcoin Layer 1 and Rollup, serving as a consensus and data availability center, providing blockchain infrastructure for DSN-AI.
+  A Layer 1.5 between Bitcoin Layer 1 and Rollup, serving as a consensus and data availability center, providing blockchain infrastructure for AI Signal.
 
 * Key Features
 
@@ -114,7 +114,7 @@ With this vision, B² Network is committed to upgrading Bitcoin from "digital go
 
   Provides final confirmation and DA for B² Rollup.
 
-  Collects DSN-AI signals to enhance consensus security.
+  Collects signals to enhance consensus security.
 
 ### B² Rollup
 
@@ -136,7 +136,7 @@ With this vision, B² Network is committed to upgrading Bitcoin from "digital go
 
   Provides a scalable execution environment for DeFi, NFTs, RWA, and other applications.
 
-### DSN-AI
+### AI Signal
 
 * Mission and Positioning
 
@@ -182,7 +182,7 @@ With this vision, B² Network is committed to upgrading Bitcoin from "digital go
 
   Mining Squared: Miners can choose to automatically convert a portion of their earnings into U2 for AI task budgeting or hedging; rBTC collateral can be used to mint U2 with one click, improving capital utilization.
 
-  DSN-AI / A-AA: Agents can set stable budgets in U2 within the A-AA wallet (e.g., "daily 50 U2 model expenses"); during execution, the router converts U2 <-> BTC as needed to pay for Gas, reducing price volatility's impact on workflows.
+  AI Signal / A-AA: Agents can set stable budgets in U2 within the A-AA wallet (e.g., "daily 50 U2 model expenses"); during execution, the router converts U2 <-> BTC as needed to pay for Gas, reducing price volatility's impact on workflows.
 
   B² Rollup Applications: DeFi, payment, and subscription dApps can use U2 as a user-facing pricing currency while enjoying the PoW finality and cross-Shard atomic interoperability of the Hub.
 
@@ -321,7 +321,7 @@ B² Hub is the Layer 1.5 hub of the system. It adopts a PoSg (Stake + Signal) co
 
 B² Rollup provides a computationally intensive or contract-complex execution environment. The Sequencer aggregates transactions and generates ZK/Validity proofs, then submits the batch data to B² Hub. All fees in the Rollup are directly priced in BTC, allowing dApps to enjoy high TPS and rich contract functionalities without introducing additional tokens.
 
-The DSN-AI layer is aimed at the agent ecosystem. The Signal Bus transforms on-chain events into billable signals, and Agent-Native Account Abstraction (A-AA) allows each agent to have a programmable BTC wallet and permission system. Model providers can package inference services into subscribable Signals; agents obtain task-driven incentives by sending or receiving signals while returning the paid BTC and signal weight to their delegated validators.
+The AI Signal layer is aimed at the agent ecosystem. The Signal Bus transforms on-chain events into billable signals, and Agent-Native Account Abstraction (A-AA) allows each agent to have a programmable BTC wallet and permission system. Model providers can package inference services into subscribable Signals; agents obtain task-driven incentives by sending or receiving signals while returning the paid BTC and signal weight to their delegated validators.
 
 U2 is the native stable settlement layer of the network. It uses BTC as over-collateral (target collateralization rate ≥150%) and stabilizes the exchange rate of 1 U2 ≈ 1 USD through oracles. The AI-driven liquidation engine automatically adjusts collateral rates and liquidation parameters based on market fluctuations, ensuring system robustness. U2 provides Agents with a price-stable micropayment channel—AI tasks can be accurately priced without being affected by BTC volatility. At the same time, operations such as minting, redeeming, and liquidating U2 generate Signal events, which are counted towards the validators' SignalScore, directly mapping stablecoin activities to network security contributions. Through the AMO (protocol-owned market making) mechanism, U2 maintains deep liquidity across various DEXs and supports traditional payment channels such as bank cards, bridging on-chain and off-chain consumption scenarios.
 
@@ -331,7 +331,7 @@ The overall role distribution is as follows:
 
 * Validators maintain PoSg consensus in B² Hub and receive additional rewards based on Signal activity;
 
-* AI agents register, delegate, and settle tasks in BTC on DSN-AI, with the generated signals enhancing the voting power of their dependent validators;
+* AI agents register, delegate, and settle tasks in BTC on AI Signal, with the generated signals enhancing the voting power of their dependent validators;
 
 * Developers can deploy applications on Rollup or Hub sub-chains, using BTC directly as Gas and incentives;
 
@@ -435,7 +435,7 @@ Thus, the BTC flow not only includes the staking and circulation of native BTC b
 
 1. Generation and Submission
 
-    * After completing tasks at the DSN-AI layer, the AI Agent calls submitSignal() to put the event summary, weight, and proof on-chain.
+    * After completing tasks at the AI Signal layer, the AI Agent calls submitSignal() to put the event summary, weight, and proof on-chain.
 
     * The Sender and each Receiver must be registered Agents, each delegated to the target validator.
 
@@ -1201,7 +1201,7 @@ Result: The BTC generated from a single block enters on-chain staking or strateg
 
 * A macro three-layer self-balancing system is formed: computing power output -> multi-strategy returns -> network security enhancement -> higher APR -> new computing power entry, making Mining Squared an automated gain engine connecting PoW and PoSg, on-chain and off-chain returns.
 
-## Integration with DSN-AI / Agent Wallet
+## Integration with AI Signal / Agent Wallet
 
 1. Native Earnings Enter A-AA Wallet
 
@@ -1239,9 +1239,9 @@ Result: The BTC generated from a single block enters on-chain staking or strateg
 
     * A-AA supports limit + time lock modules to prevent malicious strategies from depleting earnings;
 
-    * All signals generated by Mining Squared (earnings credited, staking, redemption, strategy changes) will enter the DSN-AI Graph, available for any monitoring Agent to subscribe for on-chain risk control and auditing.
+    * All signals generated by Mining Squared (earnings credited, staking, redemption, strategy changes) will enter the AI Signal Graph, available for any monitoring Agent to subscribe for on-chain risk control and auditing.
 
-Computing power earnings enter the Agent wallet through Mining Squared, and the Agent can use these funds for automatic staking, executing DeFi strategies, or paying AI task fees; the entire process is signal-driven and programmable on-chain, ultimately seamlessly injecting BTC traffic generated by PoW into the DSN-AI agent ecosystem, forming a triple loop of funds, signals, and security.
+Computing power earnings enter the Agent wallet through Mining Squared, and the Agent can use these funds for automatic staking, executing DeFi strategies, or paying AI task fees; the entire process is signal-driven and programmable on-chain, ultimately seamlessly injecting BTC traffic generated by PoW into the AI Signal agent ecosystem, forming a triple loop of funds, signals, and security.
 
 # B² Hub: The Bridge Connecting Bitcoin and AI
 
@@ -2293,7 +2293,7 @@ Complex dApp, high TPS, smart contract execution.
 
 [https://blog.bsquared.network/b%C2%B2-hub-da-layer-on-bitcoin-fa63d52b8926](https://blog.bsquared.network/b%C2%B2-hub-da-layer-on-bitcoin-fa63d52b8926)
 
-# DSN-AI: Signal-Driven Agentic AI Layer
+# AI Signal: Signal-Driven Agentic AI Layer
 
 ## Design Goals
 
@@ -2303,7 +2303,7 @@ To truly make AI "run on Bitcoin."
 
 Goal: To make every event on the blockchain a "neural pulse" for agents.
 
-Scenario: When there is a significant UTXO change on the Bitcoin mainnet or when B² Hub updates parameter thresholds, arbitrage agents running on DSN-AI immediately capture the corresponding Signal, automatically adjusting positions and risk control; no polling is needed, and there is no information delay.
+Scenario: When there is a significant UTXO change on the Bitcoin mainnet or when B² Hub updates parameter thresholds, arbitrage agents running on AI Signal immediately capture the corresponding Signal, automatically adjusting positions and risk control; no polling is needed, and there is no information delay.
 
 2. Modular and Hot-Swappable
 
@@ -2363,7 +2363,7 @@ Scenario: A new developer combines "price oracle" + "arbitrage strategy" + "ligh
 
 Concept of Agent-Native Abstract Account (A-AA):
 
-A-AA is a layer of "account as agent" abstraction designed by DSN-AI for large-scale autonomous agents. It upgrades the three elements of traditional on-chain accounts (Externally Owned Account / Contract Account) — identity, public key, and balance — to five elements:
+A-AA is a layer of "account as agent" abstraction designed by AI Signal for large-scale autonomous agents. It upgrades the three elements of traditional on-chain accounts (Externally Owned Account / Contract Account) — identity, public key, and balance — to five elements:
 
 1. Agent ID: An immutable UUID generated on-chain, corresponding to the root of a Signal DAG subtree.
 
@@ -2441,7 +2441,7 @@ Future-Oriented Expansion
 
 • AI-Governed Key Rotation: Utilizing GNN risk analysis to automatically trigger key rotation, reducing the probability of key leakage during long-term operations.
 
-Agent-Native Abstract Account (A-AA) constructs a complete lifecycle management framework for autonomous agents on-chain by natively aggregating identity, resources, policies, and permissions, enabling each AI agent to be verifiable like a smart contract and flexible to upgrade like an operating system process, thus laying the foundation for large-scale sustainable operation of DSN-AI.
+Agent-Native Abstract Account (A-AA) constructs a complete lifecycle management framework for autonomous agents on-chain by natively aggregating identity, resources, policies, and permissions, enabling each AI agent to be verifiable like a smart contract and flexible to upgrade like an operating system process, thus laying the foundation for large-scale sustainable operation of AI Signal.
 
 ## Signal Network
 
@@ -3209,7 +3209,7 @@ B² Network Documentation
 
 [26] B² Network Team. (2024). B² Hub: DA Layer on Bitcoin. https://blog.bsquared.network/b²-hub-da-layer-on-bitcoin-fa63d52b8926
 
-[27] B² Network Team. (2024). B² DSN-AI: Decentralized AI Infrastructure. https://docs.bsquared.network/b2_dsn_ai
+[27] B² Network Team. (2024). B² AI Signal: Decentralized AI Infrastructure. https://docs.bsquared.network/b2_dsn_ai
 
 [28] B² Network GitHub Repository. (2024). https://github.com/b2network/
 

@@ -9,7 +9,7 @@
 	- [Mining² (DeFAI-Mining Router)](tech_architecture/mining_squared.md)
 	- [B² Hub (Layer 1.5 PoSg Consensus)](tech_architecture/b2_hub.md)
 	- [B² Rollup (Bitcoin Layer2)](tech_architecture/rollup_layer.md)
-	- [DSN-AI (Signal-Driven Agentic AI Layer)](tech_architecture/B2_DSN_AI.md)
+	- [AI Signal (Signal-Driven Agentic AI Layer)](tech_architecture/B2_DSN_AI.md)
 	- [U2 Stablecoin (BTC-Collateralized Settlement Layer)](tech_architecture/u2.md)
 - Technical Design
 	- [Zero-Knowledge Proof Verification Commitment for ZK-Rollup on Bitcoin](tech_architecture/zpvc.md)
