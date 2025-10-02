@@ -309,7 +309,7 @@ Bitcoin possesses the global liquidity, censorship resistance, and strong finali
 
 ## System Architecture Overview Diagram
 
-![B² Network Architecture Overview](https://github.com/Stonepapa/images/blob/main/b2/B2_Architecture_Overview.png?raw=true)
+![B² Network Architecture Overview](https://github.com/user-attachments/assets/0a19e44c-a399-4a1a-a64d-859844580b62)
 
 ## Module Description and Role Positioning
 
