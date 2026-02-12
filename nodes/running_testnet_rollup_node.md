@@ -29,7 +29,7 @@ Please refer to the [Install Docker Engine](https://docs.docker.com/engine/insta
 Please refer to the [Install Docker Compose](https://docs.docker.com/compose/install/standalone/)
 
 ## Download configuration files
-Below is the releated files
+Below is the related files
 | Snapshot Data     | Size | Download Link | sha256sum
 | ----------- | ----------- | ----------- | ----------- |
 | 2024-08-23     | 4.0K     | [rollup.json](https://download.bsquared.network/testnet/rollup.json) | be7a590a5b4eb177c9953132f65be8cb0417ec47ccb2728c143da66a12c9eb2d
