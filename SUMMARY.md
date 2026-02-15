@@ -32,7 +32,7 @@
 	- [Basic information](developers/basic_information.md)
  	- [Write a contract](developers/write_contract.md)
 	- [Deploy a contract with Hardhat](developers/deploy_with_hardhat.md)
-	- [Verify contract code with Hardhat in B² Explorer](developers/how_to_verify_contract_blockscout.md)
+	- [Verify contract code with Hardhat in B² Explorer](developers/how_to_verify_contract.md)
  	- [Integrate Particle Account Abstraction](developers/account_abstraction_with_particle_network.md)
  	- [Integrate Oracle Services](developers/oracle_service.md)
  	- [Deploy a rollup node](nodes/running_rollup_node.md)

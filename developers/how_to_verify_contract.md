@@ -25,7 +25,7 @@ module.exports = {
     b2: {
       url: "https://rpc.bsquared.network",
       chainId: 223,
-      accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
+      accounts: "abc",
     },
   },
   etherscan: {
