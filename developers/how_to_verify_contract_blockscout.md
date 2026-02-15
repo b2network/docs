@@ -20,61 +20,52 @@
 
 ```js
 module.exports = {
-  networks{
-    b2testnet: {
-      url: 'https://b2testnet-rpc.bsquared.network',
-      chainId: 1123,
-      accounts: {
-        mnemonic: process.env.MNEMONIC,
-        path: "m/44'/60'/0'/0",
-        initialIndex: 0,
-        count: 20,
-      },
+  solidity: "0.8.28",
+  networks: {
+    b2: {
+      url: "https://rpc.bsquared.network",
+      chainId: 223,
+      accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
     },
   },
   etherscan: {
     apiKey: {
-      b2testnet: "abc"
+      b2: "no-api-key",
     },
     customChains: [
-       {
-        network: "b2testnet",
-        chainId: 1123,
+      {
+        network: "b2",
+        chainId: 223,
         urls: {
-          apiURL: "https://b2-testnet.alt.technology/",
-          browserURL: "https://testnet-blockscout.bsquared.network/"
-        }
+          apiURL: "https://12d6a1773a-backend-blockscout.bsquared.network/api/",
+          browserURL: "https://explorer.bsquared.network",
+        },
       },
-      }
-    ]
+    ],
   },
+  sourcify: {
+    enabled: false,
+  },
+}
 ```
 
 ## Verify
 
-1. Assuming we have deployed the Counter contract [B² Network address details for 0xbcd2B61F456CB5D07bEf2B0eD5f5B9D5ED84C1c6 | Blockscout](https://b2testnet-explorer.bsquared.network/address/0xbcd2B61F456CB5D07bEf2B0eD5f5B9D5ED84C1c6?tab=contract)
+1. Assuming we have deployed the Locker contract [B² Network address details for 0xc1189535d0De120b5DeA3704BEa0e29af0715433 | Blockscout](https://explorer.bsquared.network/address/0xc1189535d0De120b5DeA3704BEa0e29af0715433?tab=contract)
 
 2. We can use the following cli to verify
 
     ```bash
-    npx hardhat --network b2testnet --verbose --show-stack-traces verify --contract contracts/Counter.sol:Counter 0xbcd2B61F456CB5D07bEf2B0eD5f5B9D5ED84C1c6
-    hardhat:core:vars:varsManager Creating a new instance of VarsManager +0ms
-    hardhat:core:vars:varsManager Loading ENV variables if any +1ms
-    hardhat:core:global-dir Client Id found: 30b00202-0ea3-4d3d-abad-b9daa04e0407 +0ms
-    hardhat:core:analytics Sending hit for task +0ms
-    hardhat:core:analytics Hit payload: {"client_id":"30b00202-0ea3-4d3d-abad-b9daa04e0407","user_id":"30b00202-0ea3-4d3d-abad-b9daa04e0407","user_properties":{"projectId":{"value":"hardhat-project"},"userType":{"value":"Developer"},"hardhatVersion":{"value":"Hardhat 2.19.5"},"operatingSystem":{"value":"linux"},"nodeVersion":{"value":"v20.12.1"}},"events":[{"name":"task","params":{"engagement_time_msec":"10000","session_id":"0.29463604401884913"}}]} +0ms
-    hardhat:core:hre Creating HardhatRuntimeEnvironment +0ms
-    hardhat:core:hre Running task verify +4ms
-    hardhat:core:hre Running task verify:get-constructor-arguments +1ms
-    hardhat:core:hre Running task verify:get-libraries +1ms
-    hardhat:core:hre Running task verify:verify +0ms
-    hardhat:core:hre Creating provider for network b2testnet +27ms
-    hardhat:core:analytics Hit for task sent successfully +673ms
-    hardhat:core:hre Running verify:verify's super +1s
-    hardhat:core:hre Running task verify:get-compiler-versions +2ms
-    hardhat:core:hre Running task verify:get-etherscan-endpoint +1ms
-    The contract 0xbcd2B61F456CB5D07bEf2B0eD5f5B9D5ED84C1c6 has already been verified
-    hardhat:core:cli Killing Hardhat after successfully running task verify +0ms
+    npx hardhat verify --network b2 0xc1189535d0De120b5DeA3704BEa0e29af0715433 1893456000
+    
+    [dotenv@17.3.1] injecting env (2) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+    [WARNING] Network and explorer-specific api keys are deprecated in favour of the new Etherscan v2 api. Support for v1 is expected to end by May 31st, 2025. To migrate, please specify a single Etherscan.io api key the apiKey config value.
+    Successfully submitted source code for contract
+    contracts/Lock.sol:Lock at 0xc1189535d0De120b5DeA3704BEa0e29af0715433
+    for verification on the block explorer. Waiting for verification result...
+
+    Successfully verified contract Lock on the block explorer.
+    https://explorer.bsquared.network/address/0xc1189535d0De120b5DeA3704BEa0e29af0715433#code
     ```
 
 3. For more features, please refer to
