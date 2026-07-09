@@ -7,54 +7,55 @@
 B² Network is building the settlement backbone for the AI era — where Bitcoin is no longer just “digital gold”, but the **currency of autonomous agents**.
 
 We believe that:
-- **Bitcoin** is the most secure, scarce, and censorship-resistant digital asset.
-- **AI Agents** are becoming new economic actors, requiring native wallets and settlement tools.
-- **Stablecoins** provide the predictable pricing and liquidity layer that makes large-scale adoption possible.
+
+* **Bitcoin** is the most secure, scarce, and censorship-resistant digital asset.
+* **AI Agents** are becoming new economic actors, requiring native wallets and settlement tools.
+* **Stablecoins** provide the predictable pricing and liquidity layer that makes large-scale adoption possible.
 
 By uniting these three forces, B² Network transforms Bitcoin from a passive store of value into an **active medium of exchange for the AI economy**.
 
-![B² Network Architecture](./images/architecture.png)
+![B² Network Architecture](.gitbook/assets/architecture.png)
 
 ## Summary
 
-- [B² Network](README.md)
-	- [Vision: Put Bitcoin in Every AI’s Wallet](main/vision.md)
-	- [Why Bitcoin + AI + Stablecoin](main/why_bitcoin_ai_stablecoin.md)
-	- [Core Modules Overview](main/modules.md)
-- [B² Network: Put Bitcoin in Every AI’s Wallet](main/B2_Network_Put_Bitcoin_in_Every_AIs_Wallet.md)
-- [Core Architecture](tech_architecture/core_architecture.md)
-	- [Mining² (DeFAI-Mining Router)](tech_architecture/mining_squared.md)
-	- [B² Hub (Layer 1.5 PoSg Consensus)](tech_architecture/b2_hub.md)
-	- [B² Rollup (Bitcoin Layer2)](tech_architecture/B2_DSN_AI.md)
-	- [AI Signal (Signal-Driven Agentic AI Layer)](tech_architecture/B2_DSN_AI.md)
-	- [U2 Stablecoin (BTC-Collateralized Settlement Layer)](tech_architecture/u2.md)
-- Technical Design
-	- [Zero-Knowledge Proof Verification Commitment for ZK-Rollup on Bitcoin](tech_architecture/zpvc.md)
-	- [A Decentralized Signal-Driven Network for Modular and Agentic Artificial Intelligence](tech_architecture/B2_DSN_AI.md)
-	- [Rollup Layer](tech_architecture/rollup_layer.md)
-	- [DA Layer](tech_architecture/da_layer.md)
-	    - [Decentralized Storage](tech_architecture/decentralized_storage.md)
-	    - [B² Nodes](tech_architecture/b2_nodes.md)
-	    - [B² Inscription](tech_architecture/b2_inscription.md)
-	    - [B² Commitment](tech_architecture/b2_commitment.md)
-	    - [Bitcoin Network](tech_architecture/bitcoin.md)
-- For Users
-	- [Connecting to B² Mainnet](users/connect.md)
-	- [Set Gas Price](users/set_gas_price.md)
-	- [Join B² Network Discovery](users/join_discovery.md)
-	- [Bridge to B² Mainnet](users/bridge.md)
-	- [Transfer BlockHeadz NFT](users/transfer_blockheadz.md)
-	- [Add B2 token on BNB Chain](users/add_b2_bnbchain.md)
-- For Developers
-	- [Basic information](developers/basic_information.md)
- 	- [Write a contract](developers/write_contract.md)
-	- [Deploy a contract with Hardhat](developers/deploy_with_hardhat.md)
-	- [Verify contract code with Hardhat in Explorer](developers/how_to_verify_contract_l2scan.md)
-	- [Verify contract code with Hardhat in Blockscout](developers/how_to_verify_contract_blockscout.md)
- 	- [Integrate Particle Account Abstraction](developers/account_abstraction_with_particle_network.md)
- 	- [Integrate Oracle Services](developers/oracle_service.md)
- 	- [Deploy a rollup node](nodes/running_rollup_node.md)
- 	- [Deploy a rollup archive node](nodes/running_rollup_archive_node.md)
- 	- [Deploy a node from scratch(snap sync)](nodes/deploy_a_node_from_scratch.md)
-- [Tokenomics](main/B2_Tokenomics.md)
-- [Press-Kit](main/press-kit.md)
+* [B² Network](./)
+  * [Vision: Put Bitcoin in Every AI’s Wallet](main/vision.md)
+  * [Why Bitcoin + AI + Stablecoin](main/why_bitcoin_ai_stablecoin.md)
+  * [Core Modules Overview](main/modules.md)
+* [B² Network: Put Bitcoin in Every AI’s Wallet](main/B2_Network_Put_Bitcoin_in_Every_AIs_Wallet.md)
+* [Core Architecture](tech_architecture/core_architecture.md)
+  * [Mining² (DeFAI-Mining Router)](tech_architecture/mining_squared.md)
+  * [B² Hub (Layer 1.5 PoSg Consensus)](tech_architecture/b2_hub.md)
+  * [B² Rollup (Bitcoin Layer2)](tech_architecture/B2_DSN_AI.md)
+  * [AI Signal (Signal-Driven Agentic AI Layer)](tech_architecture/B2_DSN_AI.md)
+  * [U2 Stablecoin (BTC-Collateralized Settlement Layer)](tech_architecture/u2.md)
+* Technical Design
+  * [Zero-Knowledge Proof Verification Commitment for ZK-Rollup on Bitcoin](tech_architecture/zpvc.md)
+  * [A Decentralized Signal-Driven Network for Modular and Agentic Artificial Intelligence](tech_architecture/B2_DSN_AI.md)
+  * [Rollup Layer](tech_architecture/rollup_layer.md)
+  * [DA Layer](tech_architecture/da_layer.md)
+    * [Decentralized Storage](tech_architecture/decentralized_storage.md)
+    * [B² Nodes](tech_architecture/b2_nodes.md)
+    * [B² Inscription](tech_architecture/b2_inscription.md)
+    * [B² Commitment](tech_architecture/b2_commitment.md)
+    * [Bitcoin Network](tech_architecture/bitcoin.md)
+* For Users
+  * [Connecting to B² Mainnet](users/connect.md)
+  * [Set Gas Price](users/set_gas_price.md)
+  * [Join B² Network Discovery](https://github.com/b2network/docs/blob/main/users/join_discovery.md)
+  * [Bridge to B² Mainnet](users/bridge.md)
+  * [Transfer BlockHeadz NFT](users/transfer_blockheadz.md)
+  * [Add B2 token on BNB Chain](users/add_b2_bnbchain.md)
+* For Developers
+  * [Basic information](developers/basic_information.md)
+  * [Write a contract](developers/write_contract.md)
+  * [Deploy a contract with Hardhat](developers/deploy_with_hardhat.md)
+  * [Verify contract code with Hardhat in Explorer](/broken/pages/MaOg59REOFHQb3HYYp21)
+  * [Verify contract code with Hardhat in Blockscout](developers/how_to_verify_contract.md)
+  * [Integrate Particle Account Abstraction](developers/account_abstraction_with_particle_network.md)
+  * [Integrate Oracle Services](developers/oracle_service.md)
+  * [Deploy a rollup node](nodes/running_rollup_node.md)
+  * [Deploy a rollup archive node](nodes/running_rollup_archive_node.md)
+  * [Deploy a node from scratch(snap sync)](nodes/deploy_a_node_from_scratch.md)
+* [Tokenomics](main/B2_Tokenomics.md)
+* [Press-Kit](main/press-kit.md)
