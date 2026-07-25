@@ -34,7 +34,7 @@
 	- [Deploy a contract with Hardhat](developers/deploy_with_hardhat.md)
 	- [Verify contract code with Hardhat in B² Explorer](developers/how_to_verify_contract.md)
  	- [Integrate Particle Account Abstraction](developers/account_abstraction_with_particle_network.md)
- 	- [Integrate Oracle Services](developers/oracle_service.md)
+	- [Integrate B² Network Oracle Services](developers/b2-oracle-service-introduction.md)
  	- [Deploy a rollup node](nodes/running_rollup_node.md)
  	- [Deploy a rollup archive node](nodes/running_rollup_archive_node.md)
  	- [Deploy a node from scratch(snap sync)](nodes/deploy_a_node_from_scratch.md)
