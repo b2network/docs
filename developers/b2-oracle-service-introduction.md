@@ -1,6 +1,6 @@
 # B2 Oracle Service
 
-B2 Oracle Service is a decentralized, multi-signature price oracle running on [B2 Network](https://www.bsquared.network/) (a Bitcoin Layer 2). It publishes BTC/USD price data on-chain and exposes it through **two industry-standard interfaces**, so existing integrations work without code changes:
+B2 Oracle Service is a decentralized, multi-signature price oracle running on [B2 Network](https://www.bsquared.network/) (a Bitcoin Layer 2). It publishes price data (BTC/USD, USDT/USD, and BTC-pegged assets) on-chain and exposes it through **two industry-standard interfaces**, so existing integrations work without code changes:
 
 - **Chainlink-compatible** — the standard `AggregatorV3Interface` (drop-in for any protocol built against Chainlink feeds)
 - **Supra-compatible** — the `ISupraSValueFeed` push-model interface (drop-in for any protocol built against Supra)
@@ -54,10 +54,12 @@ B2 Oracle Service is a decentralized, multi-signature price oracle running on [B
 |---|---|---|
 | BTC / USD | Chainlink `AggregatorV3Interface` | `0x3031EC46cb223dAF943FFDbCbDDE0374036E8a7f` |
 | uBTC / USD | Chainlink `AggregatorV3Interface` | `0xae06f38b576A921C768Afb172dc6fC6B88495D65` |
-| BTC / USD | Supra `ISupraSValueFeed` | `0x76bc00D4C3BfBfC6ABb2cb018df0125a2Ad26767` |
-| uBTC / USD | Supra `ISupraSValueFeed` | `0xB9C787b2fAA8eECFC9E6a602d41D968f32fcc6F5` |
+| WBTC / USD | Chainlink `AggregatorV3Interface` | `0x68AFa281bd6C300E8e4DB84b12a4cAf16F737fFf` |
+| uniBTC / USD | Chainlink `AggregatorV3Interface` | `0x4F3E3cde41aaDBC58D015be913938c534D029bcc` |
+| USDT / USD | Chainlink `AggregatorV3Interface` | `0x3CcAfDd7C6609fe3C2C57bD883f98bfAEE4Ac074` |
+| All of the above | Supra `ISupraSValueFeed` | `0x76bc00D4C3BfBfC6ABb2cb018df0125a2Ad26767` |
 
-uBTC (1:1 BTC-pegged) is served through its own proxy backed by the same BTC/USD feed, so protocols can configure it like any independent feed.
+uBTC, WBTC, and uniBTC are 1:1 BTC-pegged and priced identically to BTC. Chainlink-style integrations get a dedicated proxy address per asset (each backed by the same BTC/USD feed), so protocols can configure them like any independent feed. Supra-style integrations read all BTC-pegged assets through the **same pair indexes as BTC** — the returned price is the same value. USDT/USD is an independent feed with its own Supra pair index.
 
 ## Developer Guide
 
@@ -126,12 +128,13 @@ contract Example {
 }
 ```
 
-Registered pair indexes (Supra's official numbering):
+Registered pair indexes (Supra's official numbering; uBTC / WBTC / uniBTC use the same BTC pairs — their prices equal BTC by definition):
 
-| Pair index | Supra pair | Decimals | Available on |
-|---|---|---|---|
-| `0` | BTC_USDT | 18 | both Supra-compatible contracts |
-| `18` | BTC_USD | 8 | both Supra-compatible contracts |
+| Pair index | Supra pair | Decimals |
+|---|---|---|
+| `0` | BTC_USDT | 18 |
+| `18` | BTC_USD | 8 |
+| `48` | USDT_USD | 8 |
 
 - `time` is a **millisecond** timestamp
 - USDT-quoted pairs are served from the USD feed (USDT ≈ USD, deviation typically ~0.1%)
