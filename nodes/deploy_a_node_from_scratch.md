@@ -1,6 +1,6 @@
 # Deploy a node from scratch(snap sync)
 
-Deployment is similar to the previous two articles, with the following differences:
+Deployment is similar to [Running A B2 Node](running_rollup_node.md), with the following differences:
 
 1. No need to download snapshot data.
 2. Start the node with snap sync to quickly bring up a usable node.

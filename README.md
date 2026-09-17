@@ -55,7 +55,6 @@ By uniting these three forces, B² Network transforms Bitcoin from a passive sto
   * [Integrate Particle Account Abstraction](developers/account_abstraction_with_particle_network.md)
   * [Integrate Oracle Services](developers/oracle_service.md)
   * [Deploy a rollup node](nodes/running_rollup_node.md)
-  * [Deploy a rollup archive node](nodes/running_rollup_archive_node.md)
   * [Deploy a node from scratch(snap sync)](nodes/deploy_a_node_from_scratch.md)
 * [Tokenomics](main/B2_Tokenomics.md)
 * [Press-Kit](main/press-kit.md)

@@ -1,6 +1,6 @@
 # Running A B2 Node
 
-Learn how to run a node for the B2.
+Learn how to run a full or archive node for the B2.
 
 ## System Requirements
 
@@ -115,6 +115,26 @@ for f in $(ls rlp/block-*.rlp | sort -t- -k2 -n); do
 done
 ```
 
+For an **archive** node, add `--syncmode=full --gcmode=archive` so historical state is retained:
+
+```bash
+docker run --rm \
+  --volume ./data/db:/db \
+  --volume ./rlp:/rlp \
+  us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:v1.101315.2 \
+  --syncmode=full --gcmode=archive import --datadir=/db /rlp/block-0-500000.rlp
+```
+
+```bash
+for f in $(ls rlp/block-*.rlp | sort -t- -k2 -n); do
+  docker run --rm \
+    --volume ./data/db:/db \
+    --volume ./rlp:/rlp \
+    us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:v1.101315.2 \
+    --syncmode=full --gcmode=archive import --datadir=/db "/rlp/$(basename "$f")"
+done
+```
+
 After import, start the node with docker-compose. Any blocks after the last imported file will sync from the network.
 
 ## Setup B2 Node
@@ -157,6 +177,10 @@ services:
       GETH_AUTHRPC_JWTSECRET: "/jwt.txt"
       GETH_BOOTNODES: "enode://01c15b6db86024b708a3f3e2cdea2769264bc81dc8997752b44b904daff98f2ca15ca1e3096ed601debe7ad0f057c12d30bf93aeaeb227a59443059402c57dec@b2-mainnet-bootnode2.bsquared.network:30303,enode://c6dc84f7885be7520fcd18ef1db35bc810d1402b9f8bd76871745ac760eb51deeed161a6ef49d05bb77ee0aabe3ace02800dea409ebfce623ac56291458cb132@b2-mainnet-bootnodes.alt.technology:10200,enode://4faae95a039ccb4eb27d1692709fd8646dc323c4d039c3db7870f77af2a2cdddad1feb8290b32070e1da3894fb1a78d8d23a1d1169939331da44e3816ec8d6ad@b2-mainnet-bootnodes.alt.technology:10210"
       GETH_METRICS: "true"
+      # Archive node only:
+      # GETH_SYNCMODE: "full"
+      # GETH_GCMODE: "archive"
+      # GETH_RPC_ALLOW_UNPROTECTED_TXS: "true"
     restart: always
     network_mode: host
     volumes:
@@ -196,6 +220,8 @@ services:
     - ./data/jwt.txt:/jwt.txt
     - ./data/rollup.json:/rollup.json
 ```
+
+**Archive node:** uncomment the three archive-only `GETH_*` variables in the `l2` service above (`GETH_SYNCMODE`, `GETH_GCMODE`, `GETH_RPC_ALLOW_UNPROTECTED_TXS`). They must match the `--syncmode=full --gcmode=archive` flags used during `geth import`.
 
 Now, All preparations are complete, and the data directory structure is as follow:
 ```bash
