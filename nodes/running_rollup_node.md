@@ -6,8 +6,8 @@ Learn how to run a node for the B2.
 
 **hardware requirements**
 
-- CPUs: 16 vCPUs
-- RAM:  32 GB
+- CPUs: 4vCPUs
+- RAM:  8GB
 - Storage: 1 TB NVMe Storage
 - 100MBps bidirectional internet connection
 
@@ -28,23 +28,102 @@ Please refer to the [Install Docker Engine](https://docs.docker.com/engine/insta
 
 Please refer to the [Install Docker Compose](https://docs.docker.com/compose/install/standalone/)
 
-## Download Snapshot Data
+## Import Blocks With `geth import`
+
+Use `geth import` instead of downloading a full snapshot of the data directory. Import is incremental and more flexible: if the local node is missing a block range, download only that range and import it.
+
+Block files are published at [https://rlp.bsquared.network/](https://rlp.bsquared.network/). Each file is named `block-<start>-<end>.rlp` (about 500,000 blocks per file).
+
+### List files, then paginate and sort
+
+Fetch the file list as JSON:
+
 ```bash
-docker run \
-  --rm \
-  --volume ./data:/data \
-  ghcr.io/b2network/bsquared-snapshpt-download:20250707-160537 \
-  mainnet-fullnode-snapshot /data
+curl -H 'Accept: application/json' https://rlp.bsquared.network/
 ```
 
-**The snapshot file will be updated every Friday. The download will be temporarily unavailable. Please wait a while and try again.**
+Sort by start block and print name and size:
+
+```bash
+curl -sS -H 'Accept: application/json' https://rlp.bsquared.network/ \
+  | jq -r 'sort_by(.name | capture("block-(?<start>[0-9]+)-") | .start | tonumber)[]
+           | "\(.name)\t\(.size)"'
+```
+
+Paginate after sorting by start block (example: first 10 files):
+
+```bash
+curl -sS -H 'Accept: application/json' https://rlp.bsquared.network/ \
+  | jq -r 'sort_by(.name | capture("block-(?<start>[0-9]+)-") | .start | tonumber)[0:10][]
+           | "\(.name)\t\(.size)"'
+```
+
+The listing API also accepts `offset` / `limit` and `sort` (`name` or `size`):
+
+```bash
+curl -sS -H 'Accept: application/json' 'https://rlp.bsquared.network/?offset=0&limit=10'
+curl -sS -H 'Accept: application/json' 'https://rlp.bsquared.network/?sort=size'
+```
+
+### Download configuration files and RLP ranges
+
+```bash
+mkdir -p data rlp
+curl -fsSL -o data/genesis.json https://raw.githubusercontent.com/b2network/docs/main/nodes/genesis.json
+curl -fsSL -o data/rollup.json https://raw.githubusercontent.com/b2network/docs/main/nodes/rollup.json
+```
+
+Download a range (example: genesis through block 500,000):
+
+```bash
+wget -P rlp https://rlp.bsquared.network/block-0-500000.rlp
+```
+
+If a later range is missing locally, download only that file:
+
+```bash
+wget -P rlp https://rlp.bsquared.network/block-1000000-1500000.rlp
+```
+
+### Initialize the datadir and import RLP files
+
+Initialize once, then import files **in block order** (low to high). You can import one file at a time.
+
+```bash
+docker run --rm \
+  --volume ./data/db:/db \
+  --volume ./data/genesis.json:/genesis.json \
+  us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:v1.101315.2 \
+  init --datadir=/db /genesis.json
+
+docker run --rm \
+  --volume ./data/db:/db \
+  --volume ./rlp:/rlp \
+  us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:v1.101315.2 \
+  import --datadir=/db /rlp/block-0-500000.rlp
+```
+
+Import every downloaded file in height order:
+
+```bash
+for f in $(ls rlp/block-*.rlp | sort -t- -k2 -n); do
+  docker run --rm \
+    --volume ./data/db:/db \
+    --volume ./rlp:/rlp \
+    us-docker.pkg.dev/oplabs-tools-artifacts/images/op-geth:v1.101315.2 \
+    import --datadir=/db "/rlp/$(basename "$f")"
+done
+```
+
+After import, start the node with docker-compose. Any blocks after the last imported file will sync from the network.
+
 ## Setup B2 Node
 Generate jwt secret:
 ```bash
 openssl rand -hex 32 > ./data/jwt.txt
 ```
 
-Create  a ``docker-compose.yaml`` file and mount the data directory and json files which downloaded above.
+Create  a ``docker-compose.yaml`` file and mount the data directory and json files prepared above.
 
 **Changelog for the ``docker-compose.yaml``:** 
 
@@ -76,7 +155,7 @@ services:
       GETH_AUTHRPC_ADDR:  "0.0.0.0"
       GETH_AUTHRPC_PORT: "8551"
       GETH_AUTHRPC_JWTSECRET: "/jwt.txt"
-      GETH_BOOTNODES: "enode://55b79017f15cad10bb8ad433fb991e6a0d0ca5ccef3f9123618869ee405d61b564a44dee1b87c47e62dba51e63a9172e356714a7ecdf20594d041ddf9013136c@b2-mainnet-bootnodes-v2.altlayer.network:10201,enode://ad371eb83f665586985f4482adc8bb7fff793370843d73124e8b23c7aa69f01b6db93e5782ccbf7524d04aa5345e6bd1feeca4ec7bb1a515c3af67484604a5a8@b2-mainnet-bootnodes-v2.altlayer.network:10202,enode://274310e51ffbc42167dbf1adbcf0ef43f50db9f8f0c84d9f25ac6cf1659ca57b09c9398fbc881485865170c8090250b8b803cb2f1be11aa65b488b3c8337be2d@b2-mainnet-bootnodes-v2.altlayer.network:10203,enode://01c15b6db86024b708a3f3e2cdea2769264bc81dc8997752b44b904daff98f2ca15ca1e3096ed601debe7ad0f057c12d30bf93aeaeb227a59443059402c57dec@b2-mainnet-bootnode2.bsquared.network:30303,enode://c6dc84f7885be7520fcd18ef1db35bc810d1402b9f8bd76871745ac760eb51deeed161a6ef49d05bb77ee0aabe3ace02800dea409ebfce623ac56291458cb132@b2-mainnet-bootnodes.alt.technology:10200,enode://4faae95a039ccb4eb27d1692709fd8646dc323c4d039c3db7870f77af2a2cdddad1feb8290b32070e1da3894fb1a78d8d23a1d1169939331da44e3816ec8d6ad@b2-mainnet-bootnodes.alt.technology:10210"
+      GETH_BOOTNODES: "enode://01c15b6db86024b708a3f3e2cdea2769264bc81dc8997752b44b904daff98f2ca15ca1e3096ed601debe7ad0f057c12d30bf93aeaeb227a59443059402c57dec@b2-mainnet-bootnode2.bsquared.network:30303,enode://c6dc84f7885be7520fcd18ef1db35bc810d1402b9f8bd76871745ac760eb51deeed161a6ef49d05bb77ee0aabe3ace02800dea409ebfce623ac56291458cb132@b2-mainnet-bootnodes.alt.technology:10200,enode://4faae95a039ccb4eb27d1692709fd8646dc323c4d039c3db7870f77af2a2cdddad1feb8290b32070e1da3894fb1a78d8d23a1d1169939331da44e3816ec8d6ad@b2-mainnet-bootnodes.alt.technology:10210"
       GETH_METRICS: "true"
     restart: always
     network_mode: host
@@ -107,7 +186,7 @@ services:
       OP_NODE_P2P_LISTEN_UDP_PORT: "9222"
       OP_NODE_P2P_DISCOVERY_PATH: "/data/node/opnode_discovery_db"
       OP_NODE_P2P_PEERSTORE_PATH: "/data/node/opnode_peerstore_db"
-      OP_NODE_P2P_STATIC: "/dns/b2-mainnet-bootnodes-v2.altlayer.network/tcp/20201/p2p/16Uiu2HAm1hkacTvu8HzwPs2Mv8cHo6RfMX9vbEi4T8FuXFRK7VEM,/dns/b2-mainnet-bootnodes-v2.altlayer.network/tcp/20202/p2p/16Uiu2HAm1oTTtY6QkUdVUY8qn86Aa6MPR8FxMR4VQzXKT6tCPEun,/dns/b2-mainnet-bootnodes-v2.altlayer.network/tcp/20203/p2p/16Uiu2HAmJhSCro27M9ZQ4yPkEQjYcRx1QJ9BmzfunNPPHbJsXnGV,/dns/b2-mainnet-bootnode2.bsquared.network/tcp/9222/p2p/16Uiu2HAmSP44jYc7aJVXJhKVoYUFqkotwpEU1zqxYCksvUWwcyFT,/dns/b2-mainnet-bootnodes.alt.technology/tcp/20200/p2p/16Uiu2HAmBVxo37r3gVjK6P5m1cao5Y6UrXUu7EYd6xF4mBSVMraF,/dns/b2-mainnet-bootnodes.alt.technology/tcp/20210/p2p/16Uiu2HAmUXcXMoesAN5AjpkpYsTTHs2GWXvEEs7iRjNaL3A7WCSH"
+      OP_NODE_P2P_STATIC: "/dns/b2-mainnet-bootnodes-v2.altlayer.network/tcp/20202/p2p/16Uiu2HAm1oTTtY6QkUdVUY8qn86Aa6MPR8FxMR4VQzXKT6tCPEun,/dns/b2-mainnet-bootnodes-v2.altlayer.network/tcp/20203/p2p/16Uiu2HAmJhSCro27M9ZQ4yPkEQjYcRx1QJ9BmzfunNPPHbJsXnGV,/dns/b2-mainnet-bootnodes.alt.technology/tcp/20200/p2p/16Uiu2HAmBVxo37r3gVjK6P5m1cao5Y6UrXUu7EYd6xF4mBSVMraF,/dns/b2-mainnet-bootnodes.alt.technology/tcp/20210/p2p/16Uiu2HAmUXcXMoesAN5AjpkpYsTTHs2GWXvEEs7iRjNaL3A7WCSH"
     depends_on:
     - l2
     restart: always
@@ -126,10 +205,11 @@ tree -L 3
 │   ├── db
 │   │   ├── geth
 │   │   └── keystore
-│   ├── db.tar.gz
 │   ├── genesis.json
 │   ├── jwt.txt
 │   └── rollup.json
+├── rlp
+│   └── block-0-500000.rlp
 └── docker-compose.yml
 ```
 
