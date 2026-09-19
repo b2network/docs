@@ -7,3 +7,4 @@ Add B² network to your wallet by navigating to the **add network** option, and 
 | --- | --- | --- | --- | --- |
 | B² Mainnet | https://rpc.bsquared.network <br> https://b2-mainnet.alt.technology | 223 | https://explorer.bsquared.network/ | BTC |
 
+> Live latency benchmarks for these endpoints (p50/p90/p99, 3 regions, updated every 60 s): [OpenChainBench B² Network RPC](https://openchainbench.com/benchmarks/b2-rpc)
