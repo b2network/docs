@@ -24,9 +24,9 @@ The Bitcoin Indexer monitors blocks and transactions on the Bitcoin network. Upo
 
 The Bitcoin Committer sends two types of transactions to Bitcoin: one that writes rollup data into Bitcoin, and another that writes the zk proof verification commitment into Bitcoin.
 
-- The Bitcoin Committer constructs a data structure to record B² rollup data and generates a Tapscript, known as a "B² Inscription." Then, the Bitcoin Committer sends a UTXO of one satoshi unit to a Taproot address containing the $B^{2}$ inscription. The rollup data is permanently written into Bitcoin. (See in Figure [Data availablity in B² Network](https://ipfs.io/ipfs/Qma2tcFRFA78cDNLDTZJzpa4fDWHR4TKGptc5Q6qpsS4yT))
+- The Bitcoin Committer constructs a data structure to record B² rollup data and generates a Tapscript, known as a "B² Inscription." Then, the Bitcoin Committer sends a UTXO of one satoshi unit to a Taproot address containing the $B^{2}$ inscription. The rollup data is permanently written into Bitcoin. (See in Figure [Data availability in B² Network](https://ipfs.io/ipfs/Qma2tcFRFA78cDNLDTZJzpa4fDWHR4TKGptc5Q6qpsS4yT))
 
-![Data availablity in B² Network](https://ipfs.io/ipfs/Qma2tcFRFA78cDNLDTZJzpa4fDWHR4TKGptc5Q6qpsS4yT)
+![Data availability in B² Network](https://ipfs.io/ipfs/Qma2tcFRFA78cDNLDTZJzpa4fDWHR4TKGptc5Q6qpsS4yT)
 
 - The Bitcoin Committer breaks down large computational units from the ZK Proof Verifier of Rollup Module into smaller computational units. Each small computational unit is then turned into a bit value commitment and placed in a tapleaf script. The zk proof of rollup serves as the input for the first bit value commitment, with the output being the input for the next commitment, eventually forming a taproot. The Bitcoin Committer sends a UTXO of one satoshi unit to a Taproot address containing the commitment. The commitment based on zk proof verification is permanently written into Bitcoin. Additionally, the Bitcoin Committer sets a time-locked challenge, allowing challengers to contest the zk proof verification commitment. If there are no challengers or the challenge fails within the time lock, the rollup is finally confirmed on Bitcoin; if the challenge succeeds, the rollup is rolled back. (See in Figure [Commitment in B² Network](https://ipfs.io/ipfs/QmUSxP47LiQ1PaddAiCHw1SuKHwNVXe9KPi3Ta7JLXurEc))
 
